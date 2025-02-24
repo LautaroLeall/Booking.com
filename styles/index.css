@@ -1,0 +1,61 @@
+/* VARIABLES */
+:root {
+    --color-primary: #0B3F91;
+    --color-primary2: #0d71e384;
+    --color-secondary: #0D70E3;
+}
+
+/* ESTILOS GENERALES */
+/* HEADER */
+.navbar{
+    background-color: var(--color-primary);
+    height: 500px;
+}
+
+.icon-link{
+    width: 25px;
+    height: 25px;
+    font-size: 22px;
+}
+
+.img-vacaciones{
+    width: 100vw;
+    height: 400px;
+}
+
+.card-img-overlay{
+    width: 400px;
+    height: 200px;
+    position: absolute;
+    transform: translate(15%, 115%);
+}
+
+card-img{
+    width: 100vw;
+    height: 500px;
+}
+
+.img-vacaciones{
+    filter: brightness(26%);
+}
+
+#buscador{
+    height: 60px;
+    position: relative;
+    left: 250px;
+    bottom: 30px;
+    border: 5px solid;
+    border-radius: 10px;
+}
+
+.container-buscador{
+    border-radius: 10px;
+}
+
+.bi{
+    font-size: 22px;
+}
+
+/* MAIN */
+
+/* FOOTER */
