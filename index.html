@@ -22,77 +22,112 @@
         <nav class="navbar">
             <div class="container-fluid">
                 <div class="row w-100">
-                    <div class="col-3 d-flex justify-content-end">
-                        <a class="navbar-brand text-white h3" href="#">Booking.com</a>
+                    <!-- PRIMER PARTE -->
+                    <div class="col-12 container-primer-parte d-flex">
+                        <div class="col-3 d-flex justify-content-end">
+                            <a class="text-navbar1 navbar-brand text-white h3" href="#">Booking.com</a>
+                        </div>
+                        <div class="col-9 primer-parte-2 d-flex justify-content-end">
+                            <a class="text-navbar2 navbar-brand text-white h3" data-bs-toggle="tooltip"
+                                data-bs-placement="bottom" data-bs-title="Selecciona tu Moneda a pagar" href="#">
+                                ARS
+                            </a>
+                            <a class="text-navbar2 navbar-brand text-white h3" data-bs-toggle="tooltip"
+                                data-bs-placement="bottom" data-bs-title="Selecciona tu Idioma" href="#">
+                                <img class="icon-link rounded-circle" src="/assets/logo-españa.png"
+                                    alt="Bandera Argentina">
+                            </a>
+                            <a class="text-navbar2 navbar-brand text-white h3" data-bs-toggle="tooltip"
+                                data-bs-placement="bottom" data-bs-title="Contactar con Servicio de Ayuda" href="#">
+                                <i class="icon-link bi bi-question-circle"></i>
+                            </a>
+                            <a class="text-navbar2 navbar-brand text-white h3 ms-3" href="#">
+                                Resgistra tu Propiedad
+                            </a>
+                            <a class="text-navbar2 boton-navbar btn btn-light text-primary navbar-brand h3 ms-3"
+                                href="#">
+                                Crear una Cuenta
+                            </a>
+                            <a class="text-navbar2 boton-navbar btn btn-light text-primary navbar-brand h3 ms-3"
+                                href="#">
+                                Iniciar Sesión
+                            </a>
+                        </div>
                     </div>
-                    <div class="col-9 d-flex justify-content-center">
-                        <a class="navbar-brand text-white h3" href="#">ARS</a>
-                        <a class="navbar-brand text-white h3" href="#">
-                            <img class="icon-link rounded-circle" src="/assets/logo-arg.png" alt="Bandera Argentina">
-                        </a>
-                        <a class="navbar-brand text-white h3" href="#">
-                            <i class="icon-link bi bi-question-circle"></i>
-                        </a>
-                        <a class="navbar-brand text-white h3 ms-3" href="#">Resgistra tu Propiedad</a>
-                        <a class="btn btn-light text-primary navbar-brand h3 ms-3" href="#">Crear una Cuenta</a>
-                        <a class="btn btn-light text-primary navbar-brand h3 ms-3" href="#">Iniciar Sesión</a>
-                    </div>
+                    <!-- SEGUNDA PARTE -->
                     <div class="col-12 d-flex justify-content-center">
-                        <a class="btn btn-outline-primary navbar-brand text-white h3 rounded-pill" href="#">
+                        <a class="text-navbar3 btn btn-outline-primary navbar-brand text-white h3 rounded-pill"
+                            href="#">
                             <i class="bi bi-house"></i>
                             Alojamiento
                         </a>
-                        <a class="btn btn-outline-primary navbar-brand text-white h3 rounded-pill" href="#">
+                        <a class="text-navbar3 btn btn-outline-primary navbar-brand text-white h3 rounded-pill"
+                            href="#">
                             <i class="bi bi-airplane"></i>
                             Vuelos
                         </a>
-                        <a class="btn btn-outline-primary navbar-brand text-white h3 rounded-pill" href="#">
+                        <a class="text-navbar3 btn btn-outline-primary navbar-brand text-white h3 rounded-pill"
+                            href="#">
                             <i class="bi bi-car-front-fill"></i>
                             Alquiler de Autos
                         </a>
-                        <a class="btn btn-outline-primary navbar-brand text-white h3 rounded-pill" href="#">
+                        <a class="text-navbar3 btn btn-outline-primary navbar-brand text-white h3 rounded-pill"
+                            href="#">
                             <i class="bi bi-globe-americas"></i>
                             Atracciones Turisticas
                         </a>
-                        <a class="btn btn-outline-primary navbar-brand text-white h3 rounded-pill" href="#">
+                        <a class="text-navbar3 btn btn-outline-primary navbar-brand text-white h3 rounded-pill"
+                            href="#">
                             <i class="bi bi-taxi-front-fill"></i>
                             Taxis Aeropuerto
                         </a>
                     </div>
+                    <!-- TERCER PARTE -->
                     <div class="col-12 text-dark m-0 p-0">
                         <div class="card-img">
                             <img class="img-vacaciones rounded-0" src="/assets/vacaciones-header.jfif" alt="...">
                         </div>
                         <div class="card-img-overlay text-white">
-                            <h2 class="card-title">
+                            <h2 class="title-img card-title">
                                 <b>Siéntete como en casa en tu próxima aventura</b>
                             </h2>
                             <p class="card-text h5 mt-3">Descubre villas, casas, cabañas y más</p>
                             <a href="#" class="btn btn-primary card-text mt-3">Encuentra la tuya</a>
                         </div>
                     </div>
-                    <div class="col-8 m-0 p-0 d-flex align-items-center justify-content-around bg-warning border-warning"
+                    <!-- CUARTA PARTE -->
+                    <div class="col-9 m-0 p-0 d-flex align-items-center justify-content-around bg-warning border-warning"
                         id="buscador">
-                        <div class="container-buscador p-1 col-4 d-flex text-bg-light">
-                            <i class="bi bi-house"></i>
-                            <input class="form-control" type="text">
+                        <div class="container-buscador p-1 col-4 d-flex">
+                            <div class="input-group">
+                                <i class="bi bi-house input-group-text" id="basic-addon1"></i>
+                                <input type="text" class="form-control" placeholder="Donde quieres ir"
+                                    aria-label="Donde quieres ir" aria-describedby="basic-addon1">
+                            </div>
                         </div>
-                        <div class="container-buscador p-1 col-3 d-flex text-bg-light">
-                            <i class="bi bi-calendar"></i>
-                            <p>02/01/2023 - 02/02/2023</p>
+                        <div class="container-buscador p-1 col-2 d-flex">
+                            <input type="date" id="fecha" name="fecha" class="date-input"
+                                aria-label="Selector de fecha">
                         </div>
-                        <div class="container-buscador p-1 col-3 d-flex text-bg-light">
-                            <i class="bi bi-person"></i>
-                            <select class="form-select" aria-label="Default select example">
+                        <h6 class="text-center">-</h6>
+                        <div class="container-buscador p-1 col-2 d-flex">
+                            <input type="date" id="fecha" name="fecha" class="date-input"
+                                aria-label="Selector de fecha">
+                        </div>
+                        <div class="container-buscador input-personas p-1 d-flex">
+                            <div class="input-group">
+                                <i class="bi bi-person input-group-text"></i>
+                                <select class="form-select" aria-label="Default select example">
                                     <option selected>1 Adulto</option>
                                     <option value="1">2 Adultos</option>
-                                    <option value="2">1 Niño 2 Adultos</option>
-                                    <option value="2">2 Niños 2 Adultos</option>
+                                    <option value="2">1 Niño - 2 Adultos</option>
+                                    <option value="2">2 Niños - 2 Adultos</option>
                                     <option value="3">3 Adultos</option>
-                            </select>
+                                </select>
+                            </div>
                         </div>
-                        <div class="d-flex p-2 justify-content-end">
-                            <a class="btn btn-primary" href="#">
+                        <div class="d-flex justify-content-end">
+                            <a class="boton-navbar2 btn btn-primary" href="#">
                                 <i class="bi bi-search"></i>
                                 Buscar
                             </a>
@@ -103,14 +138,316 @@
         </nav>
     </header>
 
-    <main></main>
+    <main>
+        <div class="container-fluid mt-4 sticky">
+            <div class="row">
+                <section class="col-4 d-flex flex-column p-4 align-items-end ">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!4v1740508184400!6m8!1m7!1swgJ7icHVJU5XOlO7-D56kw!2m2!1d-26.81828765446075!2d-65.24348075850982!3f173.78117055269072!4f7.431004233502051!5f0.7820865974627469"
+                        width="385" height="180" style="border: 3px; border-radius: 10px; margin-bottom: 10px;"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="filtros border rounded-5 p-4 text-bg-secondary">
+                        <h3>Filtrar por</h3>
+                        <hr>
+                        <div class="precio">
+                            <label for="customRange2" class="form-label"><b>Tu presupuesto (por noche)</b></label>
+                            <input type="range" class="form-range" min="0" max="5" id="customRange2">
+                        </div>
+                        <hr>
+                        <div class="list">
+                            <b>Filtros populares:</b>
+                            <ul class="">
+                                <li class="list-group-item">
+                                    <input class="form-check-input me-1" type="checkbox" value=""
+                                        id="1CheckboxStretched">
+                                    <label class="form-check-label stretched-link" for="1CheckboxStretched">
+                                        Hoteles
+                                    </label>
+                                </li>
+                                <li class="list-group-item">
+                                    <input class="form-check-input me-1" type="checkbox" value=""
+                                        id="2CheckboxStretched">
+                                    <label class="form-check-label stretched-link" for="2CheckboxStretched">
+                                        Piscina
+                                    </label>
+                                </li>
+                                <li class="list-group-item">
+                                    <input class="form-check-input me-1" type="checkbox" value=""
+                                        id="3CheckboxStretched">
+                                    <label class="form-check-label stretched-link" for="3CheckboxStretched">
+                                        Sin pago por adelantado
+                                    </label>
+                                </li>
+                                <li class="list-group-item">
+                                    <input class="form-check-input me-1" type="checkbox" value=""
+                                        id="13CheckboxStretched">
+                                    <label class="form-check-label stretched-link" for="13CheckboxStretched">
+                                        Desayuno incluido
+                                    </label>
+                                </li>
+                                <li class="list-group-item">
+                                    <input class="form-check-input me-1" type="checkbox" value=""
+                                        id="14CheckboxStretched">
+                                    <label class="form-check-label stretched-link" for="14CheckboxStretched">
+                                        Piscina
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                        <hr>
+                        <div class="list">
+                            <b>Instalaciones:</b>
+                            <ul class="">
+                                <li class="list-group-item">
+                                    <input class="form-check-input me-1" type="checkbox" value=""
+                                        id="4CheckboxStretched">
+                                    <label class="form-check-label stretched-link" for="4CheckboxStretched">
+                                        Restaurante
+                                    </label>
+                                </li>
+                                <li class="list-group-item">
+                                    <input class="form-check-input me-1" type="checkbox" value=""
+                                        id="5CheckboxStretched">
+                                    <label class="form-check-label stretched-link" for="5CheckboxStretched">
+                                        Admite mascotas
+                                    </label>
+                                </li>
+                                <li class="list-group-item">
+                                    <input class="form-check-input me-1" type="checkbox" value=""
+                                        id="6CheckboxStretched">
+                                    <label class="form-check-label stretched-link" for="6CheckboxStretched">
+                                        Servicio de habitaciones
+                                    </label>
+                                </li>
+                                <li class="list-group-item">
+                                    <input class="form-check-input me-1" type="checkbox" value=""
+                                        id="15CheckboxStretched">
+                                    <label class="form-check-label stretched-link" for="15CheckboxStretched">
+                                        Recepción 24 horas
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                        <hr>
+                        <div class="list">
+                            <b>Tipo de alojamiento:</b>
+                            <ul class="">
+                                <li class="list-group-item">
+                                    <input class="form-check-input me-1" type="checkbox" value=""
+                                        id="7CheckboxStretched">
+                                    <label class="form-check-label stretched-link" for="7CheckboxStretched">
+                                        Casas y apartamentos enteros
+                                    </label>
+                                </li>
+                                <li class="list-group-item">
+                                    <input class="form-check-input me-1" type="checkbox" value=""
+                                        id="8CheckboxStretched">
+                                    <label class="form-check-label stretched-link" for="8CheckboxStretched">
+                                        Hostales y pensiones
+                                    </label>
+                                </li>
+                                <li class="list-group-item">
+                                    <input class="form-check-input me-1" type="checkbox" value=""
+                                        id="9CheckboxStretched">
+                                    <label class="form-check-label stretched-link" for="9CheckboxStretched">
+                                        Albergues
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                        <hr>
+                        <div class="list">
+                            <b>Comidas:</b>
+                            <ul class="">
+                                <li class="list-group-item">
+                                    <input class="form-check-input me-1" type="checkbox" value=""
+                                        id="10CheckboxStretched">
+                                    <label class="form-check-label stretched-link" for="10CheckboxStretched">
+                                        Con cocina
+                                    </label>
+                                </li>
+                                <li class="list-group-item">
+                                    <input class="form-check-input me-1" type="checkbox" value=""
+                                        id="11CheckboxStretched">
+                                    <label class="form-check-label stretched-link" for="11CheckboxStretched">
+                                        Desayuno incluido
+                                    </label>
+                                </li>
+                                <!-- <li class="list-group-item">
+                                    <input class="form-check-input me-1" type="checkbox" value=""
+                                        id="12CheckboxStretched">
+                                    <label class="form-check-label stretched-link" for="12CheckboxStretched">
+                                        Third checkbox
+                                    </label>
+                                </li> -->
+                            </ul>
+                        </div>
+                        <hr>
+                        <div class="list">
+                            <b>Clasificación del Alojamiento:</b><br>
+                            <ul class="">
+                                <li class="list-group-item">
+                                    <input class="form-check-input me-1" type="checkbox" value=""
+                                        id="16CheckboxStretched">
+                                    <label class="form-check-label stretched-link" for="16CheckboxStretched">
+                                        3 Estrellas
+                                    </label>
+                                </li>
+                                <li class="list-group-item">
+                                    <input class="form-check-input me-1" type="checkbox" value=""
+                                        id="17CheckboxStretched">
+                                    <label class="form-check-label stretched-link" for="17CheckboxStretched">
+                                        4 Estrellas
+                                    </label>
+                                </li>
+                                <li class="list-group-item">
+                                    <input class="form-check-input me-1" type="checkbox" value=""
+                                        id="12CheckboxStretched">
+                                    <label class="form-check-label stretched-link" for="12CheckboxStretched">
+                                        5 Estrellas
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section class="col-8 d-flex flex-column align-items-center p-4">
+                    <div class="card mb-3" style="width: 850px; height: 285px;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <a href="#">
+                                    <img src="/assets/hotel1.webp" class="img-fluid rounded" alt="hotel">
+                                </a>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <a class="text-decoration-none" href="#">
+                                        <h5 class="card-title">Hostal Tierra de Vinos</h5>
+                                    </a>
+                                    <p class="puntuacion">Muy Bien
+                                        <span class="ms-1 badge text-bg-primary">8,2</span>
+                                        <br><span class="puntuacion1">311 reseñas</span>
+                                    <p class="card-text card-text-main">
+                                        <a href="#" class="text-decoration-none">
+                                            <i class="bi bi-geo-alt-fill"></i>
+                                            Cafayate
+                                            <br><span class="puntuacion1">Cafayate, Argentina</span>
+                                            Mostrar en el Mapa
+                                        </a>
+                                    </p>
+                                    <div class="boton-card">
+                                        <a href="#"
+                                            class="btn btn-sm btn-primary border border-3 border-warning rounded-4">
+                                            Ver disponibilidad
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3" style="width: 850px; height: 285px;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <a href="#">
+                                    <img src="/assets/hotel2.webp" class="img-fluid rounded" alt="hotel">
+                                </a>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <a href="#" class="text-decoration-none">
+                                        <h5 class="card-title">El Hospedaje</h5>
+                                    </a>
+                                    <p class="puntuacion">Fantastico
+                                        <span class="ms-1 badge text-bg-primary">9,0</span>
+                                        <br><span class="puntuacion1">139 reseñas</span>
+                                    </p>
+                                    <p class="card-text card-text-main">This is a wider card with supporting text below
+                                        as a natural
+                                        lead-in to additional content. This content is a little bit longer.</p>
+                                    <div class="boton-card">
+                                        <a href="#"
+                                            class="btn btn-sm btn-primary border border-3 border-warning rounded-4">
+                                            Ver disponibilidad
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3" style="width: 850px; height: 285px;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <a href="#">
+                                    <img src="/assets/hotel3.webp" class="img-fluid rounded" alt="hotel">
+                                </a>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <a href="#" class="text-decoration-none">
+                                        <h5 class="card-title">Residencial Shalom </h5>
+                                    </a>
+                                    <p class="puntuacion">Bien
+                                        <span class="ms-1 badge text-bg-primary">7,8</span>
+                                        <br><span class="puntuacion1">108 reseñas</span>
+                                    </p>
+                                    <p class="card-text card-text-main">This is a wider card with supporting text below
+                                        as a natural
+                                        lead-in to additional content. This content is a little bit longer.</p>
+                                    <div class="boton-card">
+                                        <a href="#"
+                                            class="btn btn-sm btn-primary border border-3 border-warning rounded-4">
+                                            Ver disponibilidad
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3" style="width: 850px; height: 285px;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <a href="#">
+                                    <img src="/assets/hotel4.webp" class="img-fluid rounded" alt="hotel">
+                                </a>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <a href="#" class="text-decoration-none">
+                                        <h5 class="card-title">Piattelli Wine Resort Hotel Cafayate</h5>
+                                    </a>
+                                    <p class="puntuacion">Excepcional
+                                        <span class="ms-1 badge text-bg-primary">9,8</span>
+                                        <br><span class="puntuacion1">213 reseñas</span>
+                                    </p>
+                                    <p class="card-text card-text-main">This is a wider card with supporting text below
+                                        as a natural
+                                        lead-in to additional content. This content is a little bit longer.</p>
+                                    <div class="boton-card">
+                                        <a href="#"
+                                            class="btn btn-sm btn-primary border border-3 border-warning rounded-4">
+                                            Ver disponibilidad
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
 
     <footer></footer>
 </body>
 
 <!-- BOOTSTRAP -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+<!-- JS TOOLTIPS BOOTSTRAP  -->
+<script>
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+</script>
 
 </html>
