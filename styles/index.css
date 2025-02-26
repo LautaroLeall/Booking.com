@@ -6,56 +6,149 @@
 }
 
 /* ESTILOS GENERALES */
+* {
+    margin: 0;
+    padding: 0;
+}
+
 /* HEADER */
 .navbar{
     background-color: var(--color-primary);
     height: 500px;
 }
 
+/* PRIMER PARTE */
+.container-primer-parte{
+    height: 50px;
+}
+
+a.text-navbar1{
+    font-size: 25px;
+}
+
+.primer-parte-2{
+    height: 45px;
+    align-self: center;
+    align-items: center;
+}
+
+a.text-navbar2{
+    font-size: 15px;
+    margin: 35px;
+}
+
 .icon-link{
     width: 25px;
     height: 25px;
-    font-size: 22px;
+    font-size: 23px;
 }
 
+a.boton-navbar{
+    border-radius: 20px;
+}
+
+/* SECUNDA PARTE */
+a.text-navbar3{
+    font-size: 15px;
+}
+
+/* TERCER PARTE */
 .img-vacaciones{
     width: 100vw;
     height: 400px;
-}
-
-.card-img-overlay{
-    width: 400px;
-    height: 200px;
-    position: absolute;
-    transform: translate(15%, 115%);
-}
-
-card-img{
-    width: 100vw;
-    height: 500px;
-}
-
-.img-vacaciones{
     filter: brightness(26%);
 }
 
+.card-img-overlay{
+    width: 500px;
+    height: 200px;
+    position: absolute;
+    transform: translate(40%, 105%);
+}
+
+.title-img{
+    font-size: 45px;
+}
+
+/* CUARTA PARTE */
 #buscador{
     height: 60px;
     position: relative;
-    left: 250px;
+    left: 200px;
     bottom: 30px;
     border: 5px solid;
     border-radius: 10px;
 }
 
 .container-buscador{
+    height: 55px;
     border-radius: 10px;
 }
 
-.bi{
-    font-size: 22px;
+a.boton-navbar2{
+    height: 45px;
+}
+
+.input-personas{
+    width: 220px;
+}
+
+.date-input {
+    height: 48px;
+    padding: 1rem;
+    width: 100%;
+    font-size: 1rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.date-input:hover {
+    border-color: #999;
+}
+
+/* Estilizar el calendario nativo */
+.date-input::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    padding: 0.2rem;
+    opacity: 0.6;
+    transition: opacity 0.2s;
 }
 
 /* MAIN */
+/* CARDS */
+.card-body{
+    width: 565px;
+    height: 285px;
+    border-radius: 10px;
+}
 
+.boton-card{
+    position: relative;
+    bottom: 70px;
+    left: 390px;
+    width: 135px;
+}
+
+.puntuacion{
+    width: 150px;
+    position: relative;
+    bottom: 30px;
+    left: 380px;
+    font-weight: bold;
+}
+
+.puntuacion1{
+    position: relative;
+    bottom: 10px;
+    font-size: 10px;
+    font-weight: normal;
+}
+
+.card-text-main{
+    position: relative;
+    bottom: 50px;
+    height: 180px;
+}
 /* FOOTER */
