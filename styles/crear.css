@@ -1,0 +1,29 @@
+/* VARIABLES */
+:root {
+    --color-primary: #0B3F91;
+    --color-primary2: #0d71e384;
+    --color-secondary: #0D70E3;
+}
+
+/* ESTILOS GENERALES */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER */
+/* NAVBAR */
+.navbar{
+    background-color: var(--color-primary);
+    height: 70px;
+}
+
+a.text-navbar1 {
+    font-size: 25px;
+}
+
+.icon-link {
+    width: 25px;
+    height: 25px;
+    font-size: 22px;
+}
