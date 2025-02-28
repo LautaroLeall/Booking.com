@@ -1,0 +1,301 @@
+/* RESPONSIVE */
+/* Estilos base existentes */
+/* ... mantener los estilos existentes ... */
+
+/* Media Queries para Responsive Design */
+@media (max-width: 768px) {
+    /* Navbar */
+    .navbar {
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    .container-primer-parte {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .col-3 {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .primer-parte-2 {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    a.text-navbar2 {
+        margin: 5px;
+        font-size: 14px;
+    }
+
+    /* Botones de navegación */
+    .col-12.d-flex.justify-content-center {
+        overflow-x: auto;
+        padding: 10px 0;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    a.text-navbar3 {
+        font-size: 12px;
+        white-space: nowrap;
+        padding: 8px 12px;
+        margin: 0 5px;
+    }
+
+    /* Imagen y texto superpuesto */
+    .img-vacaciones {
+        height: 250px;
+    }
+
+    .text-img-overlay {
+        left: 20px;
+        bottom: 60px;
+        width: 90%;
+    }
+
+    .title-img {
+        font-size: 24px;
+    }
+
+    /* Buscador */
+    #buscador {
+        position: static;
+        width: 95% !important;
+        margin: -20px auto 0;
+        padding: 10px;
+        height: auto;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .container-buscador {
+        width: 100% !important;
+        height: auto;
+    }
+
+    .input-personas {
+        width: 100%;
+    }
+
+    .boton-navbar2 {
+        width: 100%;
+    }
+
+    /* Main content */
+    .container-fluid .row {
+        flex-direction: column;
+    }
+
+    /* Filtros */
+    .container-filtros {
+        width: 100%;
+        position: relative;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    .filtros {
+        width: 100%;
+        position: relative;
+    }
+
+    /* Cards */
+    .col-8 {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .card {
+        width: 100% !important;
+        height: auto !important;
+        margin: 0 0 20px 0;
+    }
+
+    .card .row {
+        flex-direction: column;
+    }
+
+    .card .col-md-4 {
+        width: 100%;
+    }
+
+    .card .col-md-8 {
+        width: 100%;
+    }
+
+    .logo-img {
+        left: auto;
+        right: 10px;
+    }
+
+    .card-title {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .puntuacion {
+        text-align: left;
+    }
+
+    .puntuacion1 {
+        position: relative;
+        top: 0;
+    }
+
+    .link-card {
+        flex-wrap: wrap;
+        gap: 10px !important;
+        position: static;
+    }
+
+    .boton-card {
+        position: static;
+        margin-top: 15px;
+        justify-content: center !important;
+    }
+
+    /* Footer */
+    .footer .col-12.d-flex {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .footer .justify-content-between {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* Ajustes adicionales para pantallas muy pequeñas */
+@media (max-width: 576px) {
+    a.text-navbar1 {
+        font-size: 20px;
+    }
+
+    .text-img-overlay {
+        bottom: 40px;
+    }
+
+    .title-img {
+        font-size: 20px;
+    }
+
+    .card-text {
+        font-size: 14px;
+    }
+
+    .date-input {
+        font-size: 14px;
+        padding: 0.5rem;
+    }
+
+    iframe {
+        width: 100%;
+        height: 150px;
+    }
+}
+
+/* Mejoras de usabilidad táctil */
+@media (hover: none) {
+    a, button {
+        padding: 12px !important;
+    }
+
+    .form-check-input {
+        width: 20px;
+        height: 20px;
+    }
+
+    .form-check-label {
+        padding: 8px 0;
+    }
+}
+
+/* Optimizaciones de rendimiento */
+@media (prefers-reduced-motion: no-preference) {
+    .card,
+    .icon-redes,
+    .boton-navbar,
+    .text-navbar3 {
+        transition: all 0.3s ease;
+    }
+}
+
+/* Soporte para modo oscuro */
+@media (prefers-color-scheme: dark) {
+    .filtros {
+        background-color: #f8f9fa;
+    }
+
+    .card {
+        background-color: #f8f9fa;
+    }
+}
+
+/* Mejoras de accesibilidad */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        transition: none !important;
+    }
+}
+
+/* Ajustes para scroll horizontal en navegación */
+.col-12.d-flex.justify-content-center::-webkit-scrollbar {
+    height: 4px;
+}
+
+.col-12.d-flex.justify-content-center::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.col-12.d-flex.justify-content-center::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+}
+
+/* Mejoras de interactividad */
+@media (max-width: 768px) {
+    .btn, 
+    .form-control,
+    .form-select {
+        min-height: 44px; /* Mejora la facilidad de toque */
+    }
+
+    .card {
+        cursor: pointer;
+        transition: transform 0.2s ease;
+    }
+
+    .card:active {
+        transform: scale(0.98);
+    }
+}
+
+/* Fix para imágenes responsivas */
+.img-fluid {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Mejoras en la navegación móvil */
+@media (max-width: 768px) {
+    .navbar-brand {
+        margin-right: 0;
+    }
+
+    .text-navbar2.boton-navbar {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    #buscador .input-group {
+        width: 100%;
+    }
+}

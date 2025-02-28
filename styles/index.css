@@ -12,6 +12,7 @@
 }
 
 body {
+    width: 100vw;
     overflow-x: hidden;
 }
 
@@ -234,6 +235,17 @@ a.boton-navbar2 {
     position: absolute;
     bottom: 20px;
     right: 10px;
+    transition: 0.5s;
+}
+
+.guardar{
+    transition: 0.5s;
+}
+
+.guardar:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    color: hwb(0 0% 0%);
 }
 
 /* FOOTER */
@@ -248,4 +260,9 @@ a.boton-navbar2 {
 .icon-redes:hover {
     transform: scale(1.2);
     transition: 0.5s;
+}
+
+a.text-footer{
+    color: var(--color-secondary);
+    text-decoration: none;
 }
