@@ -53,6 +53,12 @@ a.boton-navbar {
     border-radius: 20px;
 }
 
+/* CONTENEDOR MONEDA TOOLTIPS */
+.container-moneda{
+    height: 45px;
+    width: 80px;
+}
+
 /* SECUNDA PARTE */
 a.text-navbar3 {
     font-size: 15px;
