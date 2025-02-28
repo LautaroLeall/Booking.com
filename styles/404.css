@@ -1,0 +1,304 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    color: #333;
+    background-color: #f0f2f5;
+}
+
+/* Error page container */
+.error-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Animated background elements */
+.error-container::before,
+.error-container::after {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    opacity: 0.1;
+    animation: float 15s infinite ease-in-out;
+}
+
+.error-container::before {
+    background: linear-gradient(90deg, #f56565, #ed8936);
+    top: -100px;
+    left: -100px;
+    animation-delay: 0s;
+}
+
+.error-container::after {
+    background: linear-gradient(90deg, #4299e1, #667eea);
+    bottom: -100px;
+    right: -100px;
+    animation-delay: -7.5s;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translate(0, 0) scale(1);
+    }
+
+    25% {
+        transform: translate(50px, 50px) scale(1.1);
+    }
+
+    50% {
+        transform: translate(25px, 100px) scale(0.9);
+    }
+
+    75% {
+        transform: translate(-50px, 25px) scale(1.05);
+    }
+}
+
+/* Error card */
+.error-card {
+    max-width: 28rem;
+    width: 100%;
+    background-color: white;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.1);
+    transform: translateY(0);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    z-index: 10;
+}
+
+.error-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 25px 30px -5px rgba(0, 0, 0, 0.3), 0 15px 15px -5px rgba(0, 0, 0, 0.15);
+}
+
+/* Error icon section */
+.error-icon {
+    background: linear-gradient(135deg, #f56565 0%, #e53e3e 100%);
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.error-icon::after {
+    content: "";
+    position: absolute;
+    width: 150%;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.1);
+    transform: rotate(-15deg);
+    top: -50px;
+    left: -25%;
+}
+
+.error-icon svg {
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+/* Error content section */
+.error-content {
+    padding: 2rem;
+    text-align: center;
+}
+
+.error-content h1 {
+    font-size: 5rem;
+    font-weight: 800;
+    color: #1a202c;
+    margin-bottom: 0.5rem;
+    line-height: 1;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
+    background: linear-gradient(135deg, #1a202c 0%, #4a5568 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.error-content h2 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #4a5568;
+    margin-bottom: 1.25rem;
+    position: relative;
+    display: inline-block;
+}
+
+.error-content h2::after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 3px;
+    background: linear-gradient(90deg, #f56565, transparent);
+    bottom: -8px;
+    left: 25%;
+}
+
+.error-content p {
+    color: #718096;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Home button */
+.home-button {
+    display: inline-block;
+    background: linear-gradient(135deg, #f56565 0%, #e53e3e 100%);
+    color: white;
+    font-weight: 600;
+    padding: 0.75rem 2rem;
+    border-radius: 9999px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(229, 62, 62, 0.3);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.home-button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #e53e3e 0%, #c53030 100%);
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.home-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 7px 14px rgba(229, 62, 62, 0.4);
+}
+
+.home-button:hover::before {
+    opacity: 1;
+}
+
+.home-button:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px rgba(229, 62, 62, 0.4);
+}
+
+/* Error footer */
+.error-footer {
+    background-color: #f7fafc;
+    padding: 1.25rem;
+    border-top: 1px solid #edf2f7;
+    text-align: center;
+    position: relative;
+}
+
+.error-footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.05), transparent);
+}
+
+.error-footer p {
+    font-size: 0.875rem;
+    color: #a0aec0;
+    transition: color 0.3s ease;
+}
+
+.error-footer:hover p {
+    color: #718096;
+}
+
+a.text-footer{
+    color: rgb(212, 4, 4);
+    text-decoration: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+    .error-content h1 {
+        font-size: 3.5rem;
+    }
+
+    .error-content h2 {
+        font-size: 1.25rem;
+    }
+
+    .error-content p {
+        font-size: 1rem;
+    }
+
+    .home-button {
+        padding: 0.6rem 1.5rem;
+    }
+}
+
+/* Additional animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.error-card {
+    animation: fadeIn 0.6s ease-out forwards;
+}
+
+.error-content h1 {
+    animation: fadeIn 0.6s 0.2s both;
+}
+
+.error-content h2 {
+    animation: fadeIn 0.6s 0.3s both;
+}
+
+.error-content p {
+    animation: fadeIn 0.6s 0.4s both;
+}
+
+.home-button {
+    animation: fadeIn 0.6s 0.5s both;
+}
