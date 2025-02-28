@@ -41,7 +41,7 @@
                                 data-bs-placement="bottom" data-bs-title="Contactar con Servicio de Ayuda" href="#">
                                 <i class="icon-link bi bi-question-circle"></i>
                             </a>
-                            <a class="text-navbar2 navbar-brand text-white h3 ms-3" href="#">
+                            <a class="text-navbar2 navbar-brand text-white h3 ms-3" href="/pages/error404.html">
                                 Resgistra tu Propiedad
                             </a>
                             <a class="text-navbar2 boton-navbar btn btn-light text-primary navbar-brand h3 ms-3"
@@ -57,27 +57,27 @@
                     <!-- SEGUNDA PARTE -->
                     <div class="col-12 d-flex justify-content-center">
                         <a class="text-navbar3 btn btn-outline-primary navbar-brand text-white h3 rounded-pill"
-                            href="#">
+                            href="/pages/error404.html">
                             <i class="bi bi-house"></i>
                             Alojamiento
                         </a>
                         <a class="text-navbar3 btn btn-outline-primary navbar-brand text-white h3 rounded-pill"
-                            href="#">
+                            href="/pages/error404.html">
                             <i class="bi bi-airplane"></i>
                             Vuelos
                         </a>
                         <a class="text-navbar3 btn btn-outline-primary navbar-brand text-white h3 rounded-pill"
-                            href="#">
+                            href="/pages/error404.html">
                             <i class="bi bi-car-front-fill"></i>
                             Alquiler de Autos
                         </a>
                         <a class="text-navbar3 btn btn-outline-primary navbar-brand text-white h3 rounded-pill"
-                            href="#">
+                            href="/pages/error404.html">
                             <i class="bi bi-globe-americas"></i>
                             Atracciones Turisticas
                         </a>
                         <a class="text-navbar3 btn btn-outline-primary navbar-brand text-white h3 rounded-pill"
-                            href="#">
+                            href="/pages/error404.html">
                             <i class="bi bi-taxi-front-fill"></i>
                             Taxis Aeropuerto
                         </a>
@@ -91,7 +91,7 @@
                                 <b>Siéntete como en casa en tu próxima aventura</b>
                             </h2>
                             <p class="card-text h5 mt-3">Descubre villas, casas, cabañas y más</p>
-                            <a href="#" class="btn btn-primary card-text mt-3">Encuentra la tuya</a>
+                            <a href="/pages/error404.html" class="btn btn-primary card-text mt-3">Encuentra la tuya</a>
                         </div>
                     </div>
                     <!-- CUARTA PARTE -->
@@ -126,7 +126,7 @@
                             </div>
                         </div>
                         <div class="d-flex justify-content-end">
-                            <a class="boton-navbar2 btn btn-primary" href="#">
+                            <a class="boton-navbar2 btn btn-primary" href="/pages/error404.html">
                                 <i class="bi bi-search"></i>
                                 Buscar
                             </a>
@@ -140,170 +140,307 @@
     <main>
         <div class="container-fluid mt-4">
             <div class="row">
-                <section class="col-4 d-flex flex-column p-4 align-items-end">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!4v1740508184400!6m8!1m7!1swgJ7icHVJU5XOlO7-D56kw!2m2!1d-26.81828765446075!2d-65.24348075850982!3f173.78117055269072!4f7.431004233502051!5f0.7820865974627469"
-                        width="385" height="180" style="border: 3px; border-radius: 10px; margin-bottom: 10px;"
-                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    <div class="filtros border rounded-5 p-4 text-bg-secondary">
-                        <h3>Filtrar por</h3>
-                        <hr>
-                        <div class="precio">
-                            <label for="customRange2" class="form-label"><b>Tu presupuesto (por noche)</b></label>
-                            <input type="range" class="form-range" min="0" max="5" id="customRange2">
-                        </div>
-                        <hr>
+                <!-- FILTROS -->
+                <section class="container-filtros col-4 d-flex flex-column p-4 align-items-end">
+                    <div class="filtros p-2 text-dark">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!4v1740508184400!6m8!1m7!1swgJ7icHVJU5XOlO7-D56kw!2m2!1d-26.81828765446075!2d-65.24348075850982!3f173.78117055269072!4f7.431004233502051!5f0.7820865974627469"
+                            width="320" height="180" style="border-radius: 10px;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                        <hr class="m-3">
+                        <h4 class="fw-bold">Filtrar por: </h4>
+                        <hr class="m-3">
                         <div class="list">
                             <b>Filtros populares:</b>
-                            <ul class="">
-                                <li class="list-group-item">
-                                    <input class="form-check-input me-1" type="checkbox" value=""
-                                        id="1CheckboxStretched">
+                            <ul class="opciones-container p-0 m-0">
+                                <li class="list-group-item mb-1">
+                                    <input class="form-check-input border-2 border-secondary me-1" type="checkbox"
+                                        value="" id="1CheckboxStretched">
                                     <label class="form-check-label stretched-link" for="1CheckboxStretched">
                                         Hoteles
                                     </label>
                                 </li>
-                                <li class="list-group-item">
-                                    <input class="form-check-input me-1" type="checkbox" value=""
-                                        id="2CheckboxStretched">
+                                <li class="list-group-item mb-1">
+                                    <input class="form-check-input border-2 border-secondary me-1" type="checkbox"
+                                        value="" id="2CheckboxStretched">
                                     <label class="form-check-label stretched-link" for="2CheckboxStretched">
                                         Piscina
                                     </label>
                                 </li>
-                                <li class="list-group-item">
-                                    <input class="form-check-input me-1" type="checkbox" value=""
-                                        id="3CheckboxStretched">
+                                <li class="list-group-item mb-1">
+                                    <input class="form-check-input border-2 border-secondary me-1" type="checkbox"
+                                        value="" id="3CheckboxStretched">
                                     <label class="form-check-label stretched-link" for="3CheckboxStretched">
                                         Sin pago por adelantado
                                     </label>
                                 </li>
-                                <li class="list-group-item">
-                                    <input class="form-check-input me-1" type="checkbox" value=""
-                                        id="13CheckboxStretched">
+                                <li class="list-group-item mb-1">
+                                    <input class="form-check-input border-2 border-secondary me-1" type="checkbox"
+                                        value="" id="13CheckboxStretched">
                                     <label class="form-check-label stretched-link" for="13CheckboxStretched">
                                         Desayuno incluido
                                     </label>
                                 </li>
-                                <li class="list-group-item">
-                                    <input class="form-check-input me-1" type="checkbox" value=""
-                                        id="14CheckboxStretched">
+                                <li class="list-group-item mb-1">
+                                    <input class="form-check-input border-2 border-secondary me-1" type="checkbox"
+                                        value="" id="14CheckboxStretched">
                                     <label class="form-check-label stretched-link" for="14CheckboxStretched">
                                         Piscina
                                     </label>
                                 </li>
+                                <div class="toggle-container">
+                                    <input type="checkbox" id="toggle-filtros" class="toggle-checkbox d-none">
+                                    <label for="toggle-filtros"
+                                        class="mostrar-mas d-flex align-items-center my-1 text-decoration-none text-primary">
+                                        Mostrar los 13
+                                    </label>
+                                    <div class="opciones-ocultas">
+                                        <li class="list-group-item mb-1">
+                                            <input class="form-check-input border-2 border-secondary me-1"
+                                                type="checkbox" value="" id="14CheckboxStretched">
+                                            <label class="form-check-label stretched-link" for="14CheckboxStretched">
+                                                Piscina
+                                            </label>
+                                        </li>
+
+                                        <li class="list-group-item mb-1">
+                                            <input class="form-check-input border-2 border-secondary me-1"
+                                                type="checkbox" value="" id="14CheckboxStretched">
+                                            <label class="form-check-label stretched-link" for="14CheckboxStretched">
+                                                Piscina
+                                            </label>
+                                        </li>
+
+                                        <li class="list-group-item mb-1">
+                                            <input class="form-check-input border-2 border-secondary me-1"
+                                                type="checkbox" value="" id="14CheckboxStretched">
+                                            <label class="form-check-label stretched-link" for="14CheckboxStretched">
+                                                Piscina
+                                            </label>
+                                        </li>
+
+                                        <li class="list-group-item mb-1">
+                                            <input class="form-check-input border-2 border-secondary me-1"
+                                                type="checkbox" value="" id="14CheckboxStretched">
+                                            <label class="form-check-label stretched-link" for="14CheckboxStretched">
+                                                Piscina
+                                            </label>
+                                        </li>
+
+                                        <li class="list-group-item mb-1">
+                                            <input class="form-check-input border-2 border-secondary me-1"
+                                                type="checkbox" value="" id="14CheckboxStretched">
+                                            <label class="form-check-label stretched-link" for="14CheckboxStretched">
+                                                Piscina
+                                            </label>
+                                        </li>
+
+                                        <li class="list-group-item mb-1">
+                                            <input class="form-check-input border-2 border-secondary me-1"
+                                                type="checkbox" value="" id="14CheckboxStretched">
+                                            <label class="form-check-label stretched-link" for="14CheckboxStretched">
+                                                Piscina
+                                            </label>
+                                        </li>
+
+                                        <li class="list-group-item mb-1">
+                                            <input class="form-check-input border-2 border-secondary me-1"
+                                                type="checkbox" value="" id="14CheckboxStretched">
+                                            <label class="form-check-label stretched-link" for="14CheckboxStretched">
+                                                Piscina
+                                            </label>
+                                        </li>
+
+                                        <li class="list-group-item mb-1">
+                                            <input class="form-check-input border-2 border-secondary me-1"
+                                                type="checkbox" value="" id="14CheckboxStretched">
+                                            <label class="form-check-label stretched-link" for="14CheckboxStretched">
+                                                Piscina
+                                            </label>
+                                        </li>
+                                    </div>
+                                </div>
                             </ul>
                         </div>
-                        <hr>
+                        <hr class="m-3">
                         <div class="list">
                             <b>Instalaciones:</b>
-                            <ul class="">
-                                <li class="list-group-item">
-                                    <input class="form-check-input me-1" type="checkbox" value=""
-                                        id="4CheckboxStretched">
+                            <ul class="opciones-container p-0 m-0">
+                                <li class="list-group-item mb-1">
+                                    <input class="form-check-input border-2 border-secondary me-1" type="checkbox"
+                                        value="" id="4CheckboxStretched">
                                     <label class="form-check-label stretched-link" for="4CheckboxStretched">
                                         Restaurante
                                     </label>
                                 </li>
-                                <li class="list-group-item">
-                                    <input class="form-check-input me-1" type="checkbox" value=""
-                                        id="5CheckboxStretched">
+                                <li class="list-group-item mb-1">
+                                    <input class="form-check-input border-2 border-secondary me-1" type="checkbox"
+                                        value="" id="5CheckboxStretched">
                                     <label class="form-check-label stretched-link" for="5CheckboxStretched">
                                         Admite mascotas
                                     </label>
                                 </li>
-                                <li class="list-group-item">
-                                    <input class="form-check-input me-1" type="checkbox" value=""
-                                        id="6CheckboxStretched">
+                                <li class="list-group-item mb-1">
+                                    <input class="form-check-input border-2 border-secondary me-1" type="checkbox"
+                                        value="" id="6CheckboxStretched">
                                     <label class="form-check-label stretched-link" for="6CheckboxStretched">
                                         Servicio de habitaciones
                                     </label>
                                 </li>
-                                <li class="list-group-item">
-                                    <input class="form-check-input me-1" type="checkbox" value=""
-                                        id="15CheckboxStretched">
+                                <li class="list-group-item mb-1">
+                                    <input class="form-check-input border-2 border-secondary me-1" type="checkbox"
+                                        value="" id="15CheckboxStretched">
                                     <label class="form-check-label stretched-link" for="15CheckboxStretched">
                                         Recepción 24 horas
                                     </label>
                                 </li>
+                                <div class="toggle-container">
+                                    <input type="checkbox" id="toggle-filtros" class="toggle-checkbox d-none">
+                                    <label for="toggle-filtros"
+                                        class="mostrar-mas d-flex align-items-center my-1 text-decoration-none text-primary">
+                                        Mostrar los 13
+                                    </label>
+                                    <div class="opciones-ocultas">
+                                        <li class="list-group-item mb-1">
+                                            <input class="form-check-input border-2 border-secondary me-1"
+                                                type="checkbox" value="" id="14CheckboxStretched">
+                                            <label class="form-check-label stretched-link" for="14CheckboxStretched">
+                                                Piscina
+                                            </label>
+                                        </li>
+                                        <li class="list-group-item mb-1">
+                                            <input class="form-check-input border-2 border-secondary me-1"
+                                                type="checkbox" value="" id="14CheckboxStretched">
+                                            <label class="form-check-label stretched-link" for="14CheckboxStretched">
+                                                Piscina
+                                            </label>
+                                        </li>
+                                        <li class="list-group-item mb-1">
+                                            <input class="form-check-input border-2 border-secondary me-1"
+                                                type="checkbox" value="" id="14CheckboxStretched">
+                                            <label class="form-check-label stretched-link" for="14CheckboxStretched">
+                                                Piscina
+                                            </label>
+                                        </li>
+                                        <li class="list-group-item mb-1">
+                                            <input class="form-check-input border-2 border-secondary me-1"
+                                                type="checkbox" value="" id="14CheckboxStretched">
+                                            <label class="form-check-label stretched-link" for="14CheckboxStretched">
+                                                Piscina
+                                            </label>
+                                        </li>
+                                        <li class="list-group-item mb-1">
+                                            <input class="form-check-input border-2 border-secondary me-1"
+                                                type="checkbox" value="" id="14CheckboxStretched">
+                                            <label class="form-check-label stretched-link" for="14CheckboxStretched">
+                                                Piscina
+                                            </label>
+                                        </li>
+                                        <li class="list-group-item mb-1">
+                                            <input class="form-check-input border-2 border-secondary me-1"
+                                                type="checkbox" value="" id="14CheckboxStretched">
+                                            <label class="form-check-label stretched-link" for="14CheckboxStretched">
+                                                Piscina
+                                            </label>
+                                        </li>
+                                        <li class="list-group-item mb-1">
+                                            <input class="form-check-input border-2 border-secondary me-1"
+                                                type="checkbox" value="" id="14CheckboxStretched">
+                                            <label class="form-check-label stretched-link" for="14CheckboxStretched">
+                                                Piscina
+                                            </label>
+                                        </li>
+                                        <li class="list-group-item mb-1">
+                                            <input class="form-check-input border-2 border-secondary me-1"
+                                                type="checkbox" value="" id="14CheckboxStretched">
+                                            <label class="form-check-label stretched-link" for="14CheckboxStretched">
+                                                Piscina
+                                            </label>
+                                        </li>
+                                    </div>
+                                </div>
                             </ul>
                         </div>
-                        <hr>
+                        <hr class="m-3">
                         <div class="list">
                             <b>Tipo de alojamiento:</b>
-                            <ul class="">
-                                <li class="list-group-item">
-                                    <input class="form-check-input me-1" type="checkbox" value=""
-                                        id="7CheckboxStretched">
+                            <ul class="opciones-container p-0 m-0">
+                                <li class="list-group-item mb-1">
+                                    <input class="form-check-input border-2 border-secondary me-1" type="checkbox"
+                                        value="" id="7CheckboxStretched">
                                     <label class="form-check-label stretched-link" for="7CheckboxStretched">
                                         Casas y apartamentos enteros
                                     </label>
                                 </li>
-                                <li class="list-group-item">
-                                    <input class="form-check-input me-1" type="checkbox" value=""
-                                        id="8CheckboxStretched">
+                                <li class="list-group-item mb-1">
+                                    <input class="form-check-input border-2 border-secondary me-1" type="checkbox"
+                                        value="" id="8CheckboxStretched">
                                     <label class="form-check-label stretched-link" for="8CheckboxStretched">
                                         Hostales y pensiones
                                     </label>
                                 </li>
-                                <li class="list-group-item">
-                                    <input class="form-check-input me-1" type="checkbox" value=""
-                                        id="9CheckboxStretched">
+                                <li class="list-group-item mb-1">
+                                    <input class="form-check-input border-2 border-secondary me-1" type="checkbox"
+                                        value="" id="9CheckboxStretched">
                                     <label class="form-check-label stretched-link" for="9CheckboxStretched">
                                         Albergues
                                     </label>
                                 </li>
                             </ul>
                         </div>
-                        <hr>
+                        <hr class="m-3">
                         <div class="list">
                             <b>Comidas:</b>
-                            <ul class="">
-                                <li class="list-group-item">
-                                    <input class="form-check-input me-1" type="checkbox" value=""
-                                        id="10CheckboxStretched">
+                            <ul class="opciones-container p-0 m-0">
+                                <li class="list-group-item mb-1">
+                                    <input class="form-check-input border-2 border-secondary me-1" type="checkbox"
+                                        value="" id="10CheckboxStretched">
                                     <label class="form-check-label stretched-link" for="10CheckboxStretched">
                                         Con cocina
                                     </label>
                                 </li>
-                                <li class="list-group-item">
-                                    <input class="form-check-input me-1" type="checkbox" value=""
-                                        id="11CheckboxStretched">
+                                <li class="list-group-item mb-1">
+                                    <input class="form-check-input border-2 border-secondary me-1" type="checkbox"
+                                        value="" id="11CheckboxStretched">
                                     <label class="form-check-label stretched-link" for="11CheckboxStretched">
                                         Desayuno incluido
                                     </label>
                                 </li>
                             </ul>
                         </div>
-                        <hr>
+                        <hr class="m-3">
                         <div class="list">
                             <b>Clasificación del Alojamiento:</b><br>
-                            <ul class="">
-                                <li class="list-group-item">
-                                    <input class="form-check-input me-1" type="checkbox" value=""
-                                        id="16CheckboxStretched">
+                            <ul class="opciones-container p-0 m-0">
+                                <li class="list-group-item mb-1">
+                                    <input class="form-check-input border-2 border-secondary me-1" type="checkbox"
+                                        value="" id="16CheckboxStretched">
                                     <label class="form-check-label stretched-link" for="16CheckboxStretched">
                                         3 Estrellas
                                     </label>
                                 </li>
-                                <li class="list-group-item">
-                                    <input class="form-check-input me-1" type="checkbox" value=""
-                                        id="17CheckboxStretched">
+                                <li class="list-group-item mb-1">
+                                    <input class="form-check-input border-2 border-secondary me-1" type="checkbox"
+                                        value="" id="17CheckboxStretched">
                                     <label class="form-check-label stretched-link" for="17CheckboxStretched">
                                         4 Estrellas
                                     </label>
                                 </li>
-                                <li class="list-group-item">
-                                    <input class="form-check-input me-1" type="checkbox" value=""
-                                        id="12CheckboxStretched">
+                                <li class="list-group-item mb-1">
+                                    <input class="form-check-input border-2 border-secondary me-1" type="checkbox"
+                                        value="" id="12CheckboxStretched">
                                     <label class="form-check-label stretched-link" for="12CheckboxStretched">
                                         5 Estrellas
                                     </label>
                                 </li>
                             </ul>
                         </div>
+
                     </div>
                 </section>
 
+                <!-- CARDS -->
                 <section class="col-8 d-flex flex-column align-items-center p-4">
                     <div class="card mb-3" style="width: 850px; height: 285px;">
                         <div class="row g-0">
@@ -641,30 +778,35 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 d-flex justify-content-center mt-2">
-                    <a href="#" class="btn btn-outline-info text-light btn-sm">
+                    <a href="/pages/error404.html" class="btn btn-outline-info text-light btn-sm">
                         Resgistra tu Propiedad
                     </a>
                 </div>
-                <hr class="mt-2" style="color: white;">
+                <hr class="mt-2" style="color: hsl(244, 89%, 11%);">
                 <div class="col-12 d-flex justify-content-between align-items-center">
                     <a class="text-navbar1 navbar-brand text-white h3" href="#">Booking.com</a>
-                    <a class="text-white" href="#">Gestiona tus reservas online</a>
-                    <a class="text-white" href="#">Atencion al Cliente</a>
-                    <a class="text-white" href="#">Conviertete en Afiliado</a>
+                    <a class="text-white" href="/pages/error404.html">Gestiona tus reservas online</a>
+                    <a class="text-white" href="/pages/error404.html">Atencion al Cliente</a>
+                    <a class="text-white" href="/pages/error404.html">Conviertete en Afiliado</a>
                 </div>
-                <hr class="mt-1" style="color: white;">
+                <hr class="mt-1" style="color: hsl(244, 89%, 11%);">
                 <div class="col-12 d-flex justify-content-center align-items-center gap-5 mb-2">
-                    <a href="https://www.instagram.com/lautaro_leall/" class="icon-redes text-white" target="_blank" style="font-size: 20px;">
+                    <a href="https://www.instagram.com/lautaro_leall/" class="icon-redes text-white" target="_blank"
+                        style="font-size: 20px;">
                         <i class="bi bi-instagram"></i>
                     </a>
-                    <a href="https://github.com/LautaroLeall" class="icon-redes text-white" target="_blank" style="font-size: 20px;">
+                    <a href="https://github.com/LautaroLeall" class="icon-redes text-white" target="_blank"
+                        style="font-size: 20px;">
                         <i class="bi bi-github"></i>
                     </a>
-                    <a href="https://www.linkedin.com/in/lauldp/" class="icon-redes text-white" target="_blank" style="font-size: 20px;">
+                    <a href="https://www.linkedin.com/in/lauldp/" class="icon-redes text-white" target="_blank"
+                        style="font-size: 20px;">
                         <i class="bi bi-linkedin"></i>
                     </a>
                 </div>
-                <div class="col-12 d-flex justify-content-end text-white">
+                <hr class="mt-1" style="color: hsl(244, 89%, 11%);">
+                <div class="col-12 d-flex justify-content-between text-white">
+                    <small>© 2025 Booking.com</small>
                     <p>Desarrollado por Lautaro Leal</p>
                 </div>
             </div>
