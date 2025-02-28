@@ -28,19 +28,24 @@
                             <a class="text-navbar1 navbar-brand text-white h3" href="#">Booking.com</a>
                         </div>
                         <div class="col-9 primer-parte-2 d-flex justify-content-end">
-                            <div class="container-moneda d-flex align-items-center justify-content-center"
+                            <!-- Button active modal -->
+                            <div class="container-para-filtros d-flex align-items-center justify-content-center"
                                 data-bs-toggle="tooltip" data-bs-placement="bottom"
                                 data-bs-title="Selecciona tu Moneda a pagar">
-                                <a class="btn text-navbar2 navbar-brand text-white h3" data-bs-toggle="modal"
+                                <a class="text-navbar2 navbar-brand text-white h3" data-bs-toggle="modal"
                                     data-bs-target="#staticBackdrop" data-bs-placement="bottom" href="#">
                                     ARS
                                 </a>
                             </div>
-                            <a class="text-navbar2 navbar-brand text-white h3" data-bs-toggle="tooltip"
-                                data-bs-placement="bottom" data-bs-title="Selecciona tu Idioma" href="#">
+                            <!-- Button active modal -->
+                            <div class="container-para-filtros d-flex align-items-center justify-content-center"
+                                data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Selecciona tu Idioma"">
+                                <a class="text-navbar2 navbar-brand text-white h3" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop1" data-bs-placement="bottom" href="#">
                                 <img class="icon-link rounded-circle" src="/assets/logo-españa.png"
                                     alt="Bandera Argentina">
-                            </a>
+                                </a>
+                            </div>
                             <a class="text-navbar2 navbar-brand text-white h3" data-bs-toggle="tooltip"
                                 data-bs-placement="bottom" data-bs-title="Contactar con Servicio de Ayuda"
                                 href="https://api.whatsapp.com/send/?phone=543813399463&text&type=phone_number&app_absent=0"
@@ -51,19 +56,19 @@
                                 Resgistra tu Propiedad
                             </a>
                             <a class="text-navbar2 boton-navbar btn btn-light text-primary navbar-brand h3 ms-3"
-                                href="#">
+                                href="/pages/crear.html">
                                 Crear una Cuenta
                             </a>
                             <a class="text-navbar2 boton-navbar btn btn-light text-primary navbar-brand h3 ms-3"
-                                href="#">
+                                href="/pages/inicio.html">
                                 Iniciar Sesión
                             </a>
                         </div>
                     </div>
                     <!-- SEGUNDA PARTE -->
                     <div class="col-12 d-flex justify-content-center">
-                        <a class="text-navbar3 btn btn-outline-primary navbar-brand text-white h3 rounded-pill"
-                            href="/pages/error404.html">
+                        <a class="text-navbar3 btn btn-primary border border-light navbar-brand text-white h3 rounded-pill"
+                            href="#">
                             <i class="bi bi-house"></i>
                             Alojamiento
                         </a>
@@ -157,6 +162,7 @@
                         <hr class="m-3">
                         <h4 class="fw-bold">Filtrar por: </h4>
                         <hr class="m-3">
+                        <!-- FILTROS POPULARES -->
                         <div class="list">
                             <b>Filtros populares:</b>
                             <ul class="opciones-container p-0 m-0">
@@ -192,77 +198,42 @@
                                     <input class="form-check-input border-2 border-secondary me-1" type="checkbox"
                                         value="" id="14CheckboxStretched">
                                     <label class="form-check-label stretched-link" for="14CheckboxStretched">
-                                        Piscina
+                                        Piscina privada
                                     </label>
                                 </li>
                                 <div class="toggle-container">
                                     <input type="checkbox" id="toggle-filtros" class="toggle-checkbox d-none">
                                     <label for="toggle-filtros"
-                                        class="mostrar-mas d-flex align-items-center my-1 text-decoration-none text-primary">
-                                        Mostrar los 13
+                                        class="mostrar-mas d-flex align-items-center my-1 text-primary">
+                                        Mostrar los 4
                                     </label>
                                     <div class="opciones-ocultas">
                                         <li class="list-group-item mb-1">
                                             <input class="form-check-input border-2 border-secondary me-1"
-                                                type="checkbox" value="" id="14CheckboxStretched">
-                                            <label class="form-check-label stretched-link" for="14CheckboxStretched">
-                                                Piscina
+                                                type="checkbox" value="" id="1-oculto">
+                                            <label class="form-check-label stretched-link" for="1-oculto">
+                                                Casas y chalets
                                             </label>
                                         </li>
-
                                         <li class="list-group-item mb-1">
                                             <input class="form-check-input border-2 border-secondary me-1"
-                                                type="checkbox" value="" id="14CheckboxStretched">
-                                            <label class="form-check-label stretched-link" for="14CheckboxStretched">
-                                                Piscina
+                                                type="checkbox" value="" id="2-oculto">
+                                            <label class="form-check-label stretched-link" for="2-oculto">
+                                                Villas
                                             </label>
                                         </li>
-
                                         <li class="list-group-item mb-1">
                                             <input class="form-check-input border-2 border-secondary me-1"
-                                                type="checkbox" value="" id="14CheckboxStretched">
-                                            <label class="form-check-label stretched-link" for="14CheckboxStretched">
-                                                Piscina
+                                                type="checkbox" value="" id="3-oculto">
+                                            <label class="form-check-label stretched-link" for="3-oculto">
+                                                TV
                                             </label>
                                         </li>
-
                                         <li class="list-group-item mb-1">
                                             <input class="form-check-input border-2 border-secondary me-1"
-                                                type="checkbox" value="" id="14CheckboxStretched">
-                                            <label class="form-check-label stretched-link" for="14CheckboxStretched">
-                                                Piscina
-                                            </label>
-                                        </li>
-
-                                        <li class="list-group-item mb-1">
-                                            <input class="form-check-input border-2 border-secondary me-1"
-                                                type="checkbox" value="" id="14CheckboxStretched">
-                                            <label class="form-check-label stretched-link" for="14CheckboxStretched">
-                                                Piscina
-                                            </label>
-                                        </li>
-
-                                        <li class="list-group-item mb-1">
-                                            <input class="form-check-input border-2 border-secondary me-1"
-                                                type="checkbox" value="" id="14CheckboxStretched">
-                                            <label class="form-check-label stretched-link" for="14CheckboxStretched">
-                                                Piscina
-                                            </label>
-                                        </li>
-
-                                        <li class="list-group-item mb-1">
-                                            <input class="form-check-input border-2 border-secondary me-1"
-                                                type="checkbox" value="" id="14CheckboxStretched">
-                                            <label class="form-check-label stretched-link" for="14CheckboxStretched">
-                                                Piscina
-                                            </label>
-                                        </li>
-
-                                        <li class="list-group-item mb-1">
-                                            <input class="form-check-input border-2 border-secondary me-1"
-                                                type="checkbox" value="" id="14CheckboxStretched">
-                                            <label class="form-check-label stretched-link" for="14CheckboxStretched">
-                                                Piscina
+                                                type="checkbox" value="" id="4-oculto">
+                                            <label class="form-check-label stretched-link" for="4-oculto">
+                                                Admite mascotas
                                             </label>
                                         </li>
                                     </div>
@@ -270,6 +241,7 @@
                             </ul>
                         </div>
                         <hr class="m-3">
+                        <!-- INSTALACIONES -->
                         <div class="list">
                             <b>Instalaciones:</b>
                             <ul class="opciones-container p-0 m-0">
@@ -305,63 +277,49 @@
                                     <input type="checkbox" id="toggle-filtros2" class="toggle-checkbox d-none">
                                     <label for="toggle-filtros2"
                                         class="mostrar-mas d-flex align-items-center my-1 text-decoration-none text-primary">
-                                        Mostrar los 13
+                                        Mostrar los 6
                                     </label>
                                     <div class="opciones-ocultas">
                                         <li class="list-group-item mb-1">
                                             <input class="form-check-input border-2 border-secondary me-1"
-                                                type="checkbox" value="" id="14CheckboxStretched">
-                                            <label class="form-check-label stretched-link" for="14CheckboxStretched">
-                                                Piscina
+                                                type="checkbox" value="" id="5-oculto">
+                                            <label class="form-check-label stretched-link" for="5-oculto">
+                                                Parking
                                             </label>
                                         </li>
                                         <li class="list-group-item mb-1">
                                             <input class="form-check-input border-2 border-secondary me-1"
-                                                type="checkbox" value="" id="14CheckboxStretched">
-                                            <label class="form-check-label stretched-link" for="14CheckboxStretched">
-                                                Piscina
+                                                type="checkbox" value="" id="6-oculto">
+                                            <label class="form-check-label stretched-link" for="6-oculto">
+                                                Gimnasio
                                             </label>
                                         </li>
                                         <li class="list-group-item mb-1">
                                             <input class="form-check-input border-2 border-secondary me-1"
-                                                type="checkbox" value="" id="14CheckboxStretched">
-                                            <label class="form-check-label stretched-link" for="14CheckboxStretched">
-                                                Piscina
+                                                type="checkbox" value="" id="7-oculto">
+                                            <label class="form-check-label stretched-link" for="7-oculto">
+                                                Traslado aeropuerto
                                             </label>
                                         </li>
                                         <li class="list-group-item mb-1">
                                             <input class="form-check-input border-2 border-secondary me-1"
-                                                type="checkbox" value="" id="14CheckboxStretched">
-                                            <label class="form-check-label stretched-link" for="14CheckboxStretched">
-                                                Piscina
+                                                type="checkbox" value="" id="8-oculto">
+                                            <label class="form-check-label stretched-link" for="8-oculto">
+                                                Adaptado para sillas de ruedas
                                             </label>
                                         </li>
                                         <li class="list-group-item mb-1">
                                             <input class="form-check-input border-2 border-secondary me-1"
-                                                type="checkbox" value="" id="14CheckboxStretched">
-                                            <label class="form-check-label stretched-link" for="14CheckboxStretched">
-                                                Piscina
+                                                type="checkbox" value="" id="9-oculto">
+                                            <label class="form-check-label stretched-link" for="9-oculto">
+                                                WiFi gratis
                                             </label>
                                         </li>
                                         <li class="list-group-item mb-1">
                                             <input class="form-check-input border-2 border-secondary me-1"
-                                                type="checkbox" value="" id="14CheckboxStretched">
-                                            <label class="form-check-label stretched-link" for="14CheckboxStretched">
-                                                Piscina
-                                            </label>
-                                        </li>
-                                        <li class="list-group-item mb-1">
-                                            <input class="form-check-input border-2 border-secondary me-1"
-                                                type="checkbox" value="" id="14CheckboxStretched">
-                                            <label class="form-check-label stretched-link" for="14CheckboxStretched">
-                                                Piscina
-                                            </label>
-                                        </li>
-                                        <li class="list-group-item mb-1">
-                                            <input class="form-check-input border-2 border-secondary me-1"
-                                                type="checkbox" value="" id="14CheckboxStretched">
-                                            <label class="form-check-label stretched-link" for="14CheckboxStretched">
-                                                Piscina
+                                                type="checkbox" value="" id="10-oculto">
+                                            <label class="form-check-label stretched-link" for="10-oculto">
+                                                Spa y centro de bienestar
                                             </label>
                                         </li>
                                     </div>
@@ -369,6 +327,7 @@
                             </ul>
                         </div>
                         <hr class="m-3">
+                        <!-- TIPO DE ALOJAMIENTO -->
                         <div class="list">
                             <b>Tipo de alojamiento:</b>
                             <ul class="opciones-container p-0 m-0">
@@ -396,6 +355,7 @@
                             </ul>
                         </div>
                         <hr class="m-3">
+                        <!-- COMIDAS -->
                         <div class="list">
                             <b>Comidas:</b>
                             <ul class="opciones-container p-0 m-0">
@@ -416,6 +376,7 @@
                             </ul>
                         </div>
                         <hr class="m-3">
+                        <!-- CLASIFICACION DEL ALOJAMIENTO -->
                         <div class="list">
                             <b>Clasificación del Alojamiento:</b><br>
                             <ul class="opciones-container p-0 m-0">
@@ -442,7 +403,6 @@
                                 </li>
                             </ul>
                         </div>
-
                     </div>
                 </section>
 
@@ -782,24 +742,119 @@
             </div>
         </div>
 
-        <!-- MODAL -->
-        <!-- Button active modal -->
-
-        <!-- Modal -->
+        <!-- Modal Moneda a Pagar -->
         <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
             aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                        <h1 class="modal-title text-success-emphasis fw-bolder fs-5" id="staticBackdropLabel">Selecciona tu Moneda a pagar
+                        </h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body">
-                        ...
+                    <div class="modal-body p-1">
+                        <div class="d-flex flex-column col-12">
+                            <p class="card-text m-1 ps-2 text-success fw-bold" style="font-size: 13px;">
+                                Cuando corresponda, los precios se convertirán y se mostrarán
+                                en la moneda que selecciones. La moneda en la que pagas puede variar en función de la
+                                reserva y es
+                                posible que se aplique un cargo de servicio.
+                            </p>
+                            <hr class="m-2">
+                            <h6 class="ps-4 text-success fw-bold">Recomendado para ti</h6>
+                            <div class="mx-4">
+                                <div class="btn my-2 btn-outline-success d-flex justify-content-between"
+                                    data-bs-dismiss="modal">
+                                    <p class="m-0">Dolar Estadounidense</p>
+                                    <span class="fw-bold font-monospace">USD</span>
+                                </div>
+                                <div class="btn my-2 btn-outline-success d-flex justify-content-between"
+                                    data-bs-dismiss="modal">
+                                    <p class="m-0">Euro</p>
+                                    <span class="fw-bold font-monospace">EUR</span>
+                                </div>
+                                <div class="btn my-2 btn-outline-success d-flex justify-content-between"
+                                    data-bs-dismiss="modal">
+                                    <p class="m-0">Peso Argentino</p>
+                                    <span class="fw-bold font-monospace">ARS</span>
+                                </div>
+                                <div class="btn my-2 btn-outline-success d-flex justify-content-between"
+                                    data-bs-dismiss="modal">
+                                    <p class="m-0">Peso Colombiano</p>
+                                    <span class="fw-bold font-monospace">COP</span>
+                                </div>
+                                <div class="btn my-2 btn-outline-success d-flex justify-content-between"
+                                    data-bs-dismiss="modal">
+                                    <p class="m-0">Peso Chileno</p>
+                                    <span class="fw-bold font-monospace">CLP</span>
+                                </div>
+                                <div class="btn my-2 btn-outline-success d-flex justify-content-between"
+                                    data-bs-dismiss="modal">
+                                    <p class="m-0">Real Brasileño</p>
+                                    <span class="fw-bold font-monospace">BRL</span>
+                                </div>
+                                <div class="btn my-2 btn-outline-success d-flex justify-content-between"
+                                    data-bs-dismiss="modal">
+                                    <p class="m-0">Peso Mexicano</p>
+                                    <span class="fw-bold font-monospace">MXN</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Understood</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Idioma -->
+        <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title text-primary-emphasis fw-bolder fs-5" id="staticBackdropLabel">Selecciona tu Idioma</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body p-1">
+                        <div class="d-flex flex-column col-12">
+                            <h6 class="ps-4 text-primary fw-bold">Recomendado para ti</h6>
+                            <div class="mx-4">
+                                <div class="btn my-2 btn-outline-primary d-flex justify-content-between"
+                                    data-bs-dismiss="modal">
+                                    <p class="m-0">Español</p>
+                                    <img src="/assets/logo-españa.png" class="icon-link rounded-circle" alt="bandera de españa">
+                                </div>
+                                <div class="btn my-2 btn-outline-primary d-flex justify-content-between"
+                                    data-bs-dismiss="modal">
+                                    <p class="m-0">English (US)</p>
+                                    <img src="/assets/logo-eeuu.png" class="icon-link rounded-circle" alt="bandera de españa">
+                                </div>
+                                <div class="btn my-2 btn-outline-primary d-flex justify-content-between"
+                                    data-bs-dismiss="modal">
+                                    <p class="m-0">Portugês (BR)</p>
+                                    <img src="/assets/logo-bra.png" class="icon-link rounded-circle" alt="bandera de españa">
+                                </div>
+                                <div class="btn my-2 btn-outline-primary d-flex justify-content-between"
+                                    data-bs-dismiss="modal">
+                                    <p class="m-0">Françes</p>
+                                    <img src="/assets/logo-fran.png" class="icon-link rounded-circle" alt="bandera de españa">
+                                </div>
+                                <div class="btn my-2 btn-outline-primary d-flex justify-content-between"
+                                    data-bs-dismiss="modal">
+                                    <p class="m-0">Italiano</p>
+                                    <img src="/assets/logo-italia.png" class="icon-link rounded-circle" alt="bandera de españa">
+                                </div>
+                                <div class="btn my-2 btn-outline-primary d-flex justify-content-between"
+                                    data-bs-dismiss="modal">
+                                    <p class="m-0">Deutsch</p>
+                                    <img src="/assets/logo-alemania.png" class="icon-link rounded-circle" alt="bandera de españa">
+                                </div>
+                                <div class="btn my-2 btn-outline-primary d-flex justify-content-between"
+                                    data-bs-dismiss="modal">
+                                    <p class="m-0">中文</p>
+                                    <img src="/assets/logo-china.png" class="icon-link rounded-circle" alt="bandera de españa">
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
