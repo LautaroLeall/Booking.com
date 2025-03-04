@@ -27,3 +27,14 @@ a.text-navbar1 {
     height: 25px;
     font-size: 22px;
 }
+
+/* MAIN */
+.icon-redes{
+    height: 30px;
+    transition: 0.5s;
+}
+
+.icon-redes:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
+}
