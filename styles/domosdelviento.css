@@ -1,0 +1,111 @@
+/* VARIABLES */
+:root {
+    --color-primary: #0B3F91;
+    --color-primary2: #0d71e384;
+    --color-secondary: #0D70E3;
+}
+
+/* ESTILOS GENERALES */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+/* HEADER */
+.navbar {
+    background-color: var(--color-primary);
+    width: 100vw;
+    height: 150px;
+}
+
+/* PRIMER PARTE */
+.container-primer-parte {
+    height: 50px;
+}
+
+a.text-navbar1 {
+    font-size: 25px;
+}
+
+.primer-parte-2 {
+    height: 45px;
+    align-self: center;
+    align-items: center;
+}
+
+a.text-navbar2 {
+    font-size: 15px;
+    margin: 35px;
+}
+
+.icon-link {
+    width: 25px;
+    height: 25px;
+    font-size: 23px;
+}
+
+a.boton-navbar {
+    border-radius: 20px;
+}
+
+/* CONTENEDOR MONEDA TOOLTIPS */
+.container-para-filtros {
+    height: 30px;
+    width: 80px;
+}
+
+/* SECUNDA PARTE */
+a.text-navbar3 {
+    font-size: 15px;
+}
+
+/* TERCER PARTE */
+#buscador {
+    height: 60px;
+    position: relative;
+    left: 200px;
+    top: 20px;
+    border: 5px solid;
+    border-radius: 10px;
+}
+
+.container-buscador {
+    height: 55px;
+    border-radius: 10px;
+}
+
+a.boton-navbar2 {
+    height: 45px;
+}
+
+.input-personas {
+    width: 220px;
+}
+
+.date-input {
+    height: 48px;
+    padding: 1rem;
+    width: 100%;
+    font-size: 1rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.date-input:hover {
+    border-color: #999;
+}
+
+/* Estilizar el calendario nativo */
+.date-input::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    padding: 0.2rem;
+    opacity: 0.6;
+    transition: opacity 0.2s;
+}
