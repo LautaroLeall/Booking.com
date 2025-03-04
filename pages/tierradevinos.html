@@ -107,7 +107,7 @@
                             <input type="date" id="fecha" name="fecha" class="date-input"
                                 aria-label="Selector de fecha">
                         </div>
-                        <h6 class="text-center">-</h6>
+                        <i class="bi bi-dash-lg"></i>
                         <div class="container-buscador p-1 col-2 d-flex">
                             <input type="date" id="fecha" name="fecha" class="date-input"
                                 aria-label="Selector de fecha">
@@ -651,14 +651,13 @@
                                     data-bs-title="Tarjeta Visa" src="/assets/tierra-de-vinos/visa.jpg"
                                     alt="Tarjeta Visa">
                                 <img class="img-pago" data-bs-toggle="tooltip" data-bs-placement="bottom"
-                                    data-bs-title="Tarjeta Mastercard"
-                                    src="/assets/tierra-de-vinos/mastercard.jpg" alt="Tarjeta Mastercard">
+                                    data-bs-title="Tarjeta Mastercard" src="/assets/tierra-de-vinos/mastercard.jpg"
+                                    alt="Tarjeta Mastercard">
                                 <img class="img-pago" data-bs-toggle="tooltip" data-bs-placement="bottom"
-                                    data-bs-title="Tarjeta Maestro"
-                                    src="/assets/tierra-de-vinos/maestro.jpg" alt="Tarjeta Maestro">
+                                    data-bs-title="Tarjeta Maestro" src="/assets/tierra-de-vinos/maestro.jpg"
+                                    alt="Tarjeta Maestro">
                                 <img class="img-pago" data-bs-toggle="tooltip" data-bs-placement="bottom"
-                                    data-bs-title="Efectivo"
-                                    src="/assets/tierra-de-vinos/efectivo.jpg" alt="Efectivo">
+                                    data-bs-title="Efectivo" src="/assets/tierra-de-vinos/efectivo.jpg" alt="Efectivo">
                             </div>
                         </div>
                         <hr>
@@ -918,7 +917,431 @@
                             </div>
                         </div>
                         <hr>
-                        <div class="col-12">
+                        <div class="col-12 d-flex flex-column">
+                            <div class="col-12 d-flex">
+                                <h6 class="fw-bold ms-3">Filtros:</h6>
+                            </div>
+                            <div class="col-12 d-flex justify-content-around">
+                                <div class="col-3 mt-2">
+                                    <p class="m-0 fw-medium">Tipo de Cliente</p>
+                                    <div class="input-group">
+                                        <select class="form-select border-primary" aria-label="Default select example">
+                                            <option selected>Todos (108)</option>
+                                            <option value="1">Familiares (41)</option>
+                                            <option value="2">Parejas (19)</option>
+                                            <option value="2">Grupos de Amigos (34)</option>
+                                            <option value="3">Personas Solitarias (14)</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-3 mt-2">
+                                    <p class="m-0 fw-medium">Puntuaciones</p>
+                                    <div class="input-group">
+                                        <select class="form-select border-primary" aria-label="Default select example">
+                                            <option selected>Todos (108)</option>
+                                            <option value="1">Fantastico +9 (34)</option>
+                                            <option value="2">Bien 7-9 (19)</option>
+                                            <option value="2">Aceptable 5-7 (32)</option>
+                                            <option value="3">Mal 3-5 (16)</option>
+                                            <option value="4">Muy Mal 0-3 (7)</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-3 mt-2">
+                                    <p class="m-0 fw-medium">Epoca del Año</p>
+                                    <div class="input-group">
+                                        <select class="form-select border-primary" aria-label="Default select example">
+                                            <option selected>Todas</option>
+                                            <option value="1">Ene-Mar</option>
+                                            <option value="2">Abr-Jun</option>
+                                            <option value="2">Jul-Sep</option>
+                                            <option value="3">Oct-Dic</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 d-flex">
+                                <p class="m-0 fw-medium ms-5 mt-2">Elige los temas de los comentarios:</p>
+                            </div>
+                            <div class="col-11 d-flex gap-2 justify-content-end">
+                                <div class="mt-2">
+                                    <a href="#" class="btn btn-outline-primary rounded-5">
+                                        <i class="bi bi-asterisk"></i>
+                                        Ubicación
+                                    </a>
+                                </div>
+                                <div class="mt-2">
+                                    <a href="#" class="btn btn-outline-primary rounded-5">
+                                        <i class="bi bi-asterisk"></i>
+                                        Desayuno
+                                    </a>
+                                </div>
+                                <div class="mt-2">
+                                    <a href="#" class="btn btn-outline-primary rounded-5">
+                                        <i class="bi bi-asterisk"></i>
+                                        Piscina
+                                    </a>
+                                </div>
+                                <div class="mt-2">
+                                    <a href="#" class="btn btn-outline-primary rounded-5">
+                                        <i class="bi bi-asterisk"></i>
+                                        Habitacion
+                                    </a>
+                                </div>
+                                <div class="mt-2">
+                                    <a href="#" class="btn btn-outline-primary rounded-5">
+                                        <i class="bi bi-asterisk"></i>
+                                        Baño
+                                    </a>
+                                </div>
+                                <div class="mt-2">
+                                    <a href="#" class="btn btn-outline-primary rounded-circle">
+                                        <i class="bi bi-search"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <!-- ARMAR COMENTARIOS -->
+                        <div class="col-12 d-flex flex-column">
+                            <div class="col-12 d-flex">
+                                <div class="col-8 d-flex">
+                                    <h6 class="fw-bold ms-3">Comentarios de clientes:</h6>
+                                </div>
+                                <div class="col-3 d-flex flex-column">
+                                    <small>Ordenar comentarios por:</small>
+                                    <div class="input-group">
+                                        <select class="form-select border-secondary h-50"
+                                            aria-label="Default select example">
+                                            <option selected>Mas relevantes</option>
+                                            <option value="1">Mas recientes</option>
+                                            <option value="2">Mas antiguos</option>
+                                            <option value="2">Puntuacion mas alta</option>
+                                            <option value="3">Puntuacion mas baja</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 1er COMENTARIO -->
+                            <div class="col-12 d-flex flex-column">
+                                <div class="col-12 d-flex">
+                                    <div class="col-1 d-flex justify-content-end align-items-start">
+                                        <p class="m-0 fw-bold btn btn-success rounded-circle">
+                                            A
+                                        </p>
+                                    </div>
+                                    <div class="col-1 d-flex align-items-end flex-column">
+                                        <p class="m-0 fw-bold">Alarcon</p>
+                                        <div class="d-flex align-items-center me-2">
+                                            <img src="/assets/logo-chile" style="width: 12px; height: 12px;"
+                                                alt="Bandera Chile">
+                                            <p class="m-0 ms-2 font-monospace" style="font-size: 10px;">
+                                                Chile
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 d-flex align-items-end flex-column">
+                                        <small class="m-0 text-secondary">
+                                            Fecha del comentario: 27 de febrero de 2025
+                                        </small>
+                                        <div class="col-8 d-flex me-3">
+                                            <p class="m-0 fw-bold">
+                                                Muy Bien
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 d-flex justify-content-end align-items-center">
+                                        <span class="badge d-flex align-items-center text-bg-primary h-75">8,0</span>
+                                    </div>
+                                </div>
+                                <div class="col-12 d-flex mt-2">
+                                    <div class="col-3 d-flex align-items-start flex-column ms-4">
+                                        <i class="bi bi-house-heart-fill fw-light mb-1" style="font-size: 12px;">
+                                            Habitación Doble Estándar con baño compartido
+                                        </i>
+                                        <i class="bi bi-calendar fw-light mb-1" style="font-size: 12px;">
+                                            3 Noches
+                                        </i>
+                                        <i class="bi bi-people-fill fw-light" style="font-size: 12px;">
+                                            En Familia
+                                        </i>
+                                    </div>
+                                    <div class="col-8 d-flex flex-column ms-4">
+                                        <div class="d-flex">
+                                            <i class="bi bi-emoji-smile text-success fw-semibold mb-1" style="font-size: 14px;">
+                                                La ubicación del lugar, ya que queda cerca de la terminal y de la plaza
+                                                central. Además el personal fue muy amable y preocupado por atender a
+                                                los huespedes.
+                                            </i>
+                                        </div>
+                                        <div class="d-flex">
+                                            <i class="bi bi-emoji-frown text-danger fw-semibold" style="font-size: 14px;">
+                                                El agua caliente no funcionó siempre. La habitación doble que no tenia
+                                                aire acondicionado contaba solo con un ventilador que no era suficiente
+                                                para el calor que hacia al interior.
+                                            </i>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+                            <hr>
+                            <!-- 2do COMENTARIO -->
+                            <div class="col-12 d-flex flex-column">
+                                <div class="col-12 d-flex">
+                                    <div class="col-1 d-flex justify-content-end align-items-start">
+                                        <p class="m-0 fw-bold btn btn-success rounded-circle">
+                                            A
+                                        </p>
+                                    </div>
+                                    <div class="col-1 d-flex align-items-end flex-column">
+                                        <p class="m-0 fw-bold">Alarcon</p>
+                                        <div class="d-flex align-items-center me-2">
+                                            <img src="/assets/logo-chile" style="width: 12px; height: 12px;"
+                                                alt="Bandera Chile">
+                                            <p class="m-0 ms-2 font-monospace" style="font-size: 10px;">
+                                                Chile
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 d-flex align-items-end flex-column">
+                                        <small class="m-0 text-secondary">
+                                            Fecha del comentario: 27 de febrero de 2025
+                                        </small>
+                                        <div class="col-8 d-flex me-3">
+                                            <p class="m-0 fw-bold">
+                                                Muy Bien
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 d-flex justify-content-end align-items-center">
+                                        <span class="badge d-flex align-items-center text-bg-primary h-75">8,0</span>
+                                    </div>
+                                </div>
+                                <div class="col-12 d-flex mt-2">
+                                    <div class="col-3 d-flex align-items-start flex-column ms-4">
+                                        <i class="bi bi-house-heart-fill fw-light mb-1" style="font-size: 12px;">
+                                            Habitación Doble Estándar con baño compartido
+                                        </i>
+                                        <i class="bi bi-calendar fw-light mb-1" style="font-size: 12px;">
+                                            3 Noches
+                                        </i>
+                                        <i class="bi bi-people-fill fw-light" style="font-size: 12px;">
+                                            En Familia
+                                        </i>
+                                    </div>
+                                    <div class="col-8 d-flex flex-column ms-4">
+                                        <div class="d-flex">
+                                            <i class="bi bi-emoji-smile text-success fw-semibold mb-1" style="font-size: 14px;">
+                                                La ubicación del lugar, ya que queda cerca de la terminal y de la plaza
+                                                central. Además el personal fue muy amable y preocupado por atender a
+                                                los huespedes.
+                                            </i>
+                                        </div>
+                                        <div class="d-flex">
+                                            <i class="bi bi-emoji-frown text-danger fw-semibold" style="font-size: 14px;">
+                                                El agua caliente no funcionó siempre. La habitación doble que no tenia
+                                                aire acondicionado contaba solo con un ventilador que no era suficiente
+                                                para el calor que hacia al interior.
+                                            </i>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+                            <hr>
+                            <!-- 3er COMENTARIO -->
+                            <div class="col-12 d-flex flex-column">
+                                <div class="col-12 d-flex">
+                                    <div class="col-1 d-flex justify-content-end align-items-start">
+                                        <p class="m-0 fw-bold btn btn-success rounded-circle">
+                                            A
+                                        </p>
+                                    </div>
+                                    <div class="col-1 d-flex align-items-end flex-column">
+                                        <p class="m-0 fw-bold">Alarcon</p>
+                                        <div class="d-flex align-items-center me-2">
+                                            <img src="/assets/logo-chile" style="width: 12px; height: 12px;"
+                                                alt="Bandera Chile">
+                                            <p class="m-0 ms-2 font-monospace" style="font-size: 10px;">
+                                                Chile
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 d-flex align-items-end flex-column">
+                                        <small class="m-0 text-secondary">
+                                            Fecha del comentario: 27 de febrero de 2025
+                                        </small>
+                                        <div class="col-8 d-flex me-3">
+                                            <p class="m-0 fw-bold">
+                                                Muy Bien
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 d-flex justify-content-end align-items-center">
+                                        <span class="badge d-flex align-items-center text-bg-primary h-75">8,0</span>
+                                    </div>
+                                </div>
+                                <div class="col-12 d-flex mt-2">
+                                    <div class="col-3 d-flex align-items-start flex-column ms-4">
+                                        <i class="bi bi-house-heart-fill fw-light mb-1" style="font-size: 12px;">
+                                            Habitación Doble Estándar con baño compartido
+                                        </i>
+                                        <i class="bi bi-calendar fw-light mb-1" style="font-size: 12px;">
+                                            3 Noches
+                                        </i>
+                                        <i class="bi bi-people-fill fw-light" style="font-size: 12px;">
+                                            En Familia
+                                        </i>
+                                    </div>
+                                    <div class="col-8 d-flex flex-column ms-4">
+                                        <div class="d-flex">
+                                            <i class="bi bi-emoji-smile text-success fw-semibold mb-1" style="font-size: 14px;">
+                                                La ubicación del lugar, ya que queda cerca de la terminal y de la plaza
+                                                central. Además el personal fue muy amable y preocupado por atender a
+                                                los huespedes.
+                                            </i>
+                                        </div>
+                                        <div class="d-flex">
+                                            <i class="bi bi-emoji-frown text-danger fw-semibold" style="font-size: 14px;">
+                                                El agua caliente no funcionó siempre. La habitación doble que no tenia
+                                                aire acondicionado contaba solo con un ventilador que no era suficiente
+                                                para el calor que hacia al interior.
+                                            </i>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+                            <hr>
+                            <!-- 4to COMENTARIO -->
+                            <div class="col-12 d-flex flex-column">
+                                <div class="col-12 d-flex">
+                                    <div class="col-1 d-flex justify-content-end align-items-start">
+                                        <p class="m-0 fw-bold btn btn-success rounded-circle">
+                                            A
+                                        </p>
+                                    </div>
+                                    <div class="col-1 d-flex align-items-end flex-column">
+                                        <p class="m-0 fw-bold">Alarcon</p>
+                                        <div class="d-flex align-items-center me-2">
+                                            <img src="/assets/logo-chile" style="width: 12px; height: 12px;"
+                                                alt="Bandera Chile">
+                                            <p class="m-0 ms-2 font-monospace" style="font-size: 10px;">
+                                                Chile
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 d-flex align-items-end flex-column">
+                                        <small class="m-0 text-secondary">
+                                            Fecha del comentario: 27 de febrero de 2025
+                                        </small>
+                                        <div class="col-8 d-flex me-3">
+                                            <p class="m-0 fw-bold">
+                                                Muy Bien
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 d-flex justify-content-end align-items-center">
+                                        <span class="badge d-flex align-items-center text-bg-primary h-75">8,0</span>
+                                    </div>
+                                </div>
+                                <div class="col-12 d-flex mt-2">
+                                    <div class="col-3 d-flex align-items-start flex-column ms-4">
+                                        <i class="bi bi-house-heart-fill fw-light mb-1" style="font-size: 12px;">
+                                            Habitación Doble Estándar con baño compartido
+                                        </i>
+                                        <i class="bi bi-calendar fw-light mb-1" style="font-size: 12px;">
+                                            3 Noches
+                                        </i>
+                                        <i class="bi bi-people-fill fw-light" style="font-size: 12px;">
+                                            En Familia
+                                        </i>
+                                    </div>
+                                    <div class="col-8 d-flex flex-column ms-4">
+                                        <div class="d-flex">
+                                            <i class="bi bi-emoji-smile text-success fw-semibold mb-1" style="font-size: 14px;">
+                                                La ubicación del lugar, ya que queda cerca de la terminal y de la plaza
+                                                central. Además el personal fue muy amable y preocupado por atender a
+                                                los huespedes.
+                                            </i>
+                                        </div>
+                                        <div class="d-flex">
+                                            <i class="bi bi-emoji-frown text-danger fw-semibold" style="font-size: 14px;">
+                                                El agua caliente no funcionó siempre. La habitación doble que no tenia
+                                                aire acondicionado contaba solo con un ventilador que no era suficiente
+                                                para el calor que hacia al interior.
+                                            </i>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+                            <hr>
+                            <!-- 5to COMENTARIO -->
+                            <div class="col-12 d-flex flex-column">
+                                <div class="col-12 d-flex">
+                                    <div class="col-1 d-flex justify-content-end align-items-start">
+                                        <p class="m-0 fw-bold btn btn-success rounded-circle">
+                                            A
+                                        </p>
+                                    </div>
+                                    <div class="col-1 d-flex align-items-end flex-column">
+                                        <p class="m-0 fw-bold">Alarcon</p>
+                                        <div class="d-flex align-items-center me-2">
+                                            <img src="/assets/logo-chile" style="width: 12px; height: 12px;"
+                                                alt="Bandera Chile">
+                                            <p class="m-0 ms-2 font-monospace" style="font-size: 10px;">
+                                                Chile
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 d-flex align-items-end flex-column">
+                                        <small class="m-0 text-secondary">
+                                            Fecha del comentario: 27 de febrero de 2025
+                                        </small>
+                                        <div class="col-8 d-flex me-3">
+                                            <p class="m-0 fw-bold">
+                                                Muy Bien
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 d-flex justify-content-end align-items-center">
+                                        <span class="badge d-flex align-items-center text-bg-primary h-75">8,0</span>
+                                    </div>
+                                </div>
+                                <div class="col-12 d-flex mt-2">
+                                    <div class="col-3 d-flex align-items-start flex-column ms-4">
+                                        <i class="bi bi-house-heart-fill fw-light mb-1" style="font-size: 12px;">
+                                            Habitación Doble Estándar con baño compartido
+                                        </i>
+                                        <i class="bi bi-calendar fw-light mb-1" style="font-size: 12px;">
+                                            3 Noches
+                                        </i>
+                                        <i class="bi bi-people-fill fw-light" style="font-size: 12px;">
+                                            En Familia
+                                        </i>
+                                    </div>
+                                    <div class="col-8 d-flex flex-column ms-4">
+                                        <div class="d-flex">
+                                            <i class="bi bi-emoji-smile text-success fw-semibold mb-1" style="font-size: 14px;">
+                                                La ubicación del lugar, ya que queda cerca de la terminal y de la plaza
+                                                central. Además el personal fue muy amable y preocupado por atender a
+                                                los huespedes.
+                                            </i>
+                                        </div>
+                                        <div class="d-flex">
+                                            <i class="bi bi-emoji-frown text-danger fw-semibold" style="font-size: 14px;">
+                                                El agua caliente no funcionó siempre. La habitación doble que no tenia
+                                                aire acondicionado contaba solo con un ventilador que no era suficiente
+                                                para el calor que hacia al interior.
+                                            </i>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+                            <hr>
+                            <div class="col-12 d-flex justify-content-end pe-5">
+                                <p class="m-0 text-secondary fw-semibold">
+                                    Mostrando 5 - 108 
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
