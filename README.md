@@ -1,4 +1,4 @@
 <h1>Booking.com</h1>
 
-<h5>Recreando pagina de Booling</h5>
+<h3>Recreando pagina de Booling</h3>
 <p>Con HTML - CSS (sin funcionalidades)</p>
