@@ -111,6 +111,7 @@ a.boton-navbar2 {
 }
 
 /* MAIN */
+/* VISTA GENERAL */
 .img-hotel-principal{
     width: 600px;
     height: 400px;
@@ -130,7 +131,11 @@ a.boton-navbar2 {
     font-weight: normal;
 }
 
-/* MODAL */
+/* PAGOS */
+.img-pago{
+    width: 65px;
+    height: 40px;
+}
 
 /* FOOTER */
 .footer {
