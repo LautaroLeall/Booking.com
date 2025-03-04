@@ -4,12 +4,12 @@ style="width: 1100px; height: 80px;"
 alt="Booking.com">
 </h1>
 
-<p style="font-size: 25px; font-weight: bold; margin: 0px; padding:0px;"> Recreando la interfaz de Booking.com </p>
-<h3 style="margin: 5px; padding: 5px;"> Desarrollado con HTML - CSS - BOOTSTRAP 
+<h3> Recreando la interfaz de Booking.com </h3>
+<h6> Desarrollado con HTML - CSS - BOOTSTRAP 
 <small>sin funcionalidad</small>
-</h3>
+</h6>
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRV81DEKEnQXC8H-XSMG_4qMKIRz8Esax_CFA&s" 
-style="width: 150px; height: 100px; margin-left: 150px; border-radius: 30px;"
+style="width: 150px; height: 100px;"
 alt="HTML - CSS - BOOTSTRAP">
 
 <h2 align="end"> Desarrollado por: Lautaro Leal </h2>
