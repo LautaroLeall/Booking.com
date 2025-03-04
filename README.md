@@ -9,8 +9,7 @@
     <h1>Booking.com</h1>
 
 <h3>Recreando pagina de Booking</h3>
-<img (https://github.com/user-attachments/assets/c7f2088b-79e2-4070-a58d-aff95438e311
-">
+<img https"://github.com/user-attachments/assets/c7f2088b-79e2-4070-a58d-aff95438e311">
 https://www.inventivemedia.com.ph/html-tutorials-and-css-training-philippines/
 <p>Con 
   <box-icon type='logo' name='html5'>HTML</box-icon> - CSS - BOOTSTRAP (sin funcionalidades)</p>
