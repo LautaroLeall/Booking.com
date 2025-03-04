@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hostal Tierra de Vinos</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="/styles/tierradevinos.css">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <!-- ICON -->
+    <link rel="shortcut icon" href="/assets/logo.png" type="image/x-icon">
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- BOOTSTRAP ICON -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container-fluid">
+                <div class="row">
+                    <!-- PRIMER PARTE -->
+                    <div class="col-12 container-primer-parte d-flex">
+                        <div class="col-3 d-flex justify-content-end">
+                            <a class="text-navbar1 navbar-brand text-white h3" href="/index.html">Booking.com</a>
+                        </div>
+                        <div class="col-9 primer-parte-2 d-flex justify-content-end">
+                            <!-- Button active modal -->
+                            <div class="container-para-filtros d-flex align-items-center justify-content-center"
+                                data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                data-bs-title="Selecciona tu Moneda a pagar">
+                                <a class="text-navbar2 navbar-brand text-white h3" data-bs-toggle="modal"
+                                    data-bs-target="#staticBackdrop" data-bs-placement="bottom" href="#">
+                                    ARS
+                                </a>
+                            </div>
+                            <!-- Button active modal -->
+                            <div class="container-para-filtros d-flex align-items-center justify-content-center"
+                                data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Selecciona tu Idioma"">
+                                <a class=" text-navbar2 navbar-brand text-white h3" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop1" data-bs-placement="bottom" href="#">
+                                <img class="icon-link rounded-circle" src="/assets/logo-españa.png"
+                                    alt="Bandera Argentina">
+                                </a>
+                            </div>
+                            <a class="text-navbar2 navbar-brand text-white h3" data-bs-toggle="tooltip"
+                                data-bs-placement="bottom" data-bs-title="Contactar con Servicio de Ayuda"
+                                href="https://api.whatsapp.com/send/?phone=543813399463&text&type=phone_number&app_absent=0"
+                                target="_blank">
+                                <i class="icon-link bi bi-question-circle"></i>
+                            </a>
+                            <a class="text-navbar2 navbar-brand text-white h3 ms-3" href="/pages/error404.html">
+                                Resgistra tu Propiedad
+                            </a>
+                            <a class="text-navbar2 boton-navbar btn btn-light text-primary navbar-brand h3 ms-3"
+                                href="/pages/crear.html">
+                                Crear una Cuenta
+                            </a>
+                            <a class="text-navbar2 boton-navbar btn btn-light text-primary navbar-brand h3 ms-3"
+                                href="/pages/inicio.html">
+                                Iniciar Sesión
+                            </a>
+                        </div>
+                    </div>
+                    <!-- SEGUNDA PARTE -->
+                    <div class="col-12 d-flex justify-content-center">
+                        <a class="text-navbar3 btn btn-primary border border-light navbar-brand text-white h3 rounded-pill"
+                            href="#">
+                            <i class="bi bi-house"></i>
+                            Alojamiento
+                        </a>
+                        <a class="text-navbar3 btn btn-outline-primary navbar-brand text-white h3 rounded-pill"
+                            href="/pages/error404.html">
+                            <i class="bi bi-airplane"></i>
+                            Vuelos
+                        </a>
+                        <a class="text-navbar3 btn btn-outline-primary navbar-brand text-white h3 rounded-pill"
+                            href="/pages/error404.html">
+                            <i class="bi bi-car-front-fill"></i>
+                            Alquiler de Autos
+                        </a>
+                        <a class="text-navbar3 btn btn-outline-primary navbar-brand text-white h3 rounded-pill"
+                            href="/pages/error404.html">
+                            <i class="bi bi-globe-americas"></i>
+                            Atracciones Turisticas
+                        </a>
+                        <a class="text-navbar3 btn btn-outline-primary navbar-brand text-white h3 rounded-pill"
+                            href="/pages/error404.html">
+                            <i class="bi bi-taxi-front-fill"></i>
+                            Taxis Aeropuerto
+                        </a>
+                    </div>
+                    <!-- TERCER PARTE -->
+                    <div class="col-9 m-0 p-0 d-flex align-items-center justify-content-around bg-warning border-warning"
+                        id="buscador">
+                        <div class="container-buscador p-1 col-4 d-flex">
+                            <div class="input-group">
+                                <i class="bi bi-house input-group-text" id="basic-addon1"></i>
+                                <input type="text" class="form-control" placeholder="Cafayate"
+                                    aria-label="Donde quieres ir" aria-describedby="basic-addon1">
+                            </div>
+                        </div>
+                        <div class="container-buscador p-1 col-2 d-flex">
+                            <input type="date" id="fecha" name="fecha" class="date-input"
+                                aria-label="Selector de fecha">
+                        </div>
+                        <h6 class="text-center">-</h6>
+                        <div class="container-buscador p-1 col-2 d-flex">
+                            <input type="date" id="fecha" name="fecha" class="date-input"
+                                aria-label="Selector de fecha">
+                        </div>
+                        <div class="container-buscador input-personas p-1 d-flex">
+                            <div class="input-group">
+                                <i class="bi bi-person input-group-text"></i>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>1 Adulto</option>
+                                    <option value="1">2 Adultos</option>
+                                    <option value="2">1 Niño - 2 Adultos</option>
+                                    <option value="2">2 Niños - 2 Adultos</option>
+                                    <option value="3">3 Adultos</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-end">
+                            <a class="boton-navbar2 btn btn-primary d-flex align-items-center"
+                                href="/pages/error404.html">
+                                <i class="bi bi-search"></i>
+                                Buscar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container-fluid">
+            <div class="row">
+                <!-- MENU DE ARRIBA -->
+                <div class="col-12 mt-5 d-flex justify-content-evenly">
+                    <div>
+                        <a href="#vista-general" class="text-decoration-none border-3 border-bottom border-primary">
+                            Vista General
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#info-y-precios" class="text-decoration-none text-secondary">
+                            Info y Precios
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#servicios" class="text-decoration-none text-secondary">
+                            Servicios
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#" class="text-decoration-none text-secondary">
+                            Normas de la Casa
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#" class="text-decoration-none text-secondary" data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop2" data-bs-placement="bottom">
+                            Comentarios de los Clientes
+                        </a>
+                    </div>
+                </div>
+                <!-- VISTA GENERAL -->
+                <div class="col-12 d-flex mt-4 align-items-center">
+                    <div class="d-flex justify-content-center col-11 ms-5" id="vista-general">
+                        <h4 class="fw-bold">Hostal Tierra de Vinos</h4>
+                        <div class="d-flex justify-content-end align-items-center gap-5 col-8">
+                            <a href="#" class="text-decoration-none" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                data-bs-title="Guardar">
+                                <i class="bi bi-star-fill" style="font-size: 20px;"></i>
+                            </a>
+                            <a href="#" class="text-decoration-none" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                data-bs-title="Compartir este Alojamiento">
+                                <i class="bi bi-share" style="font-size: 20px"></i>
+                            </a>
+                            <a href="https://api.whatsapp.com/send/?phone=543813399463&text&type=phone_number&app_absent=0"
+                                target="_blank" class="btn btn-outline-primary rounded-pill text-decoration-none">
+                                Reservar Ahora
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- IMG -->
+                <div class="col-12 d-flex mt-3">
+                    <div class="col-6 d-flex justify-content-end">
+                        <img src="/assets/hotel1.webp" alt="Tierra de Vinos" class="img-hotel-principal rounded-2">
+                    </div>
+                    <div class="col-3 d-flex align-items-center flex-column">
+                        <img src="/assets/tierra-de-vinos/1.jpg" class="img-hotel my-1 rounded-2" alt="">
+                        <img src="/assets/tierra-de-vinos/2.jpg" class="img-hotel my-1 rounded-2" alt="">
+                    </div>
+                    <div class="d-flex flex-column">
+                        <div class="d-flex justify-content-end mt-2 me-2">
+                            <p class="puntuacion m-0">Muy Bien
+                                <span class="ms-1 badge text-bg-primary">8,2</span>
+                                <a href="#" class="puntuacion1 text-primary d-flex justify-content-end"
+                                    data-bs-toggle="modal" data-bs-target="#staticBackdrop2" data-bs-placement="bottom">
+                                    108 reseñas
+                                </a>
+                            </p>
+                        </div>
+                        <iframe class="ms-1 mt-3 border-0 rounded-2"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3677.134475438887!2d-65.97545162448407!3d-26.072589677157843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941f316b1b260abd%3A0x32d5809d3377dcda!2sHostal%20Tierra%20de%20Vinos!5e1!3m2!1ses!2sar!4v1741042160550!5m2!1ses!2sar"
+                            width="280" height="150" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                        <div class="d-flex justify-content-end mt-2">
+                            <a class="fw-medium puntuacion1" target="_blank"
+                                href="http://www.google.com/maps/place/Hostal+Tierra+de+Vinos/@-26.0725897,-65.9754516,17z/data=!3m1!4b1!4m5!3m4!1s0x941f316b1b260abd:0x32d5809d3377dcda!8m2!3d-26.0725897!4d-65.9732629">
+                                Mostrar en el Mapa
+                                <i class="bi bi-geo text-primary"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- DESCRIPCION -->
+                <div class="col-12 d-flex flex-column align-items-center mt-1 ms-3">
+                    <div class="col-10">
+                        <div>
+                            <p class="m-1">
+                                Hostal Tierra de Vinos, que tiene jardín y wifi gratis en todo el alojamiento, está en
+                                Cafayate. El alojamiento dispone de servicio de habitaciones, mostrador de información
+                                turística y cambio de moneda.
+                            </p>
+                        </div>
+                        <div>
+                            <p class="m-1">
+                                El hotel ofrece algunas habitaciones con vistas al jardín, y todas cuentan con patio. En
+                                Hostal Tierra de Vinos, las habitaciones tienen ropa de cama y toallas.
+                            </p>
+                        </div>
+                        <div>
+                            <p class="m-1">
+                                El aeropuerto (Aeropuerto de El Aybal) está a 179 km, y el alojamiento ofrece servicio
+                                de traslado de pago para ir o volver del aeropuerto.
+                            </p>
+                        </div>
+                        <div>
+                            <p class="m-1">
+                                A quienes viajan en grupo les encanta la ubicación — Le han puesto un 9,6 para estancias
+                                de varias personas.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- INFO Y PRECIOS -->
+                <div class="col-12 d-flex justify-content-center mt-4 ms-3">
+                    <div class="d-flex col-10" id="info-y-precios">
+                        <h4 class="fw-bold m-0">Disponibilidad</h4>
+                    </div>
+                </div>
+                <!-- DISPONIBILIDAD -->
+                <div class="col-12 d-flex justify-content-center ms-3">
+                    <div class="d-flex col-10" id="disponibilidad">
+                        <p class="text-danger m-0">Indica las fechas para ver la disponibilidad y los precios del
+                            alojamiento</p>
+                    </div>
+                </div>
+                <!-- FILTROS FECHA/PERSONAS -->
+                <div class="col-12 d-flex justify-content-center ms-3 mt-3">
+                    <div class="col-8 d-flex justify-content-evenly">
+                        <div class="col-2">
+                            <input type="date" class="form-control border-primary" id="fecha" placeholder="Fecha"
+                                aria-label="Fecha" aria-describedby="basic-addon1">
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <h6 class="fw-bold text-primary">-</h6>
+                        </div>
+                        <div class="col-2">
+                            <input type="date" class="form-control border-primary" id="fecha" placeholder="Fecha"
+                                aria-label="Fecha" aria-describedby="basic-addon1">
+                        </div>
+                        <div class="col-3">
+                            <div class="input-group">
+                                <i class="bi bi-person input-group-text border-primary"></i>
+                                <select class="form-select border-primary" aria-label="Default select example">
+                                    <option selected>1 Adulto</option>
+                                    <option value="1">2 Adultos</option>
+                                    <option value="2">1 Niño - 2 Adultos</option>
+                                    <option value="2">2 Niños - 2 Adultos</option>
+                                    <option value="3">3 Adultos</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-outline-primary" id="boton">
+                            Buscar
+                        </button>
+                    </div>
+                </div>
+                <!-- TABLA -->
+                <div class="col-12 d-flex justify-content-center ms-3 mt-4">
+                    <div class="col-9">
+                        <table class="table table-light table-hover bordery">
+                            <thead class="table-primary">
+                                <tr>
+                                    <th scope="col">Tipo de Habitacion</th>
+                                    <th scope="col"
+                                        style="border-left: 1px solid #00a196; border-right: 1px solid #00a196;">Numero
+                                        de Personas</th>
+                                    <th scope="col"></th>
+                                </tr>
+                            </thead>
+                            <tbody class="table-group-divider" id="cuerpo-tabla">
+                                <tr>
+                                    <td>
+                                        <i class="bi text-danger bi-caret-right-fill"></i>
+                                        <span class="fw-bold text-primary">Habitacion individual</span>
+                                        <br>
+                                        <span class="text-muted fw-light">1 cama individual</span>
+                                    </td>
+                                    <td style="border-left: 1px solid #00a196; border-right: 1px solid #00a196;">
+                                        <i class="bi bi-person-fill"></i>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="btn text-black btn-outline-info"
+                                            data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                            data-bs-title="Para ver las habitaciones disponibles y los precios, introduce las fechas de entrada y salida.">
+                                            Mostrar Precios
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <i class="bi text-danger bi-caret-right-fill"></i>
+                                        <span class="fw-bold text-primary">Habitación doble estándar</span>
+                                        <br>
+                                        <span class="text-muted fw-light">1 cama doble</span>
+                                    </td>
+                                    <td style="border-left: 1px solid #00a196; border-right: 1px solid #00a196;">
+                                        <i class="bi bi-people-fill"></i>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="btn text-black btn-outline-info"
+                                            data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                            data-bs-title="Para ver las habitaciones disponibles y los precios, introduce las fechas de entrada y salida.">
+                                            Mostrar Precios
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <i class="bi text-danger bi-caret-right-fill"></i>
+                                        <span class="fw-bold text-primary">Habitación doble estándar</span>
+                                        <br>
+                                        <span class="text-muted fw-light">2 cama individual</span>
+                                    </td>
+                                    <td style="border-left: 1px solid #00a196; border-right: 1px solid #00a196;">
+                                        <i class="bi bi-person-fill"></i>
+                                        +
+                                        <i class="bi bi-person-fill"></i>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="btn text-black btn-outline-info"
+                                            data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                            data-bs-title="Para ver las habitaciones disponibles y los precios, introduce las fechas de entrada y salida.">
+                                            Mostrar Precios
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <i class="bi text-danger bi-caret-right-fill"></i>
+                                        <span class="fw-bold text-primary">Habitacion triple estándar</span>
+                                        <br>
+                                        <span class="text-muted fw-light"> 1 cama doble + 1 cama individual</span>
+                                    </td>
+                                    <td style="border-left: 1px solid #00a196; border-right: 1px solid #00a196;">
+                                        <i class="bi bi-people-fill"></i>
+                                        +
+                                        <i class="bi bi-person-fill"></i>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="btn text-black btn-outline-info"
+                                            data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                            data-bs-title="Para ver las habitaciones disponibles y los precios, introduce las fechas de entrada y salida.">
+                                            Mostrar Precios
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <i class="bi text-danger bi-caret-right-fill"></i>
+                                        <span class="fw-bold text-primary">Habitacion triple estándar</span>
+                                        <br>
+                                        <span class="text-muted fw-light">3 cama individual</span>
+                                    </td>
+                                    <td style="border-left: 1px solid #00a196; border-right: 1px solid #00a196;">
+                                        <i class="bi bi-person-fill"></i>
+                                        +
+                                        <i class="bi bi-person-fill"></i>
+                                        +
+                                        <i class="bi bi-person-fill"></i>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="btn text-black btn-outline-info"
+                                            data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                            data-bs-title="Para ver las habitaciones disponibles y los precios, introduce las fechas de entrada y salida.">
+                                            Mostrar Precios
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <i class="bi text-danger bi-caret-right-fill"></i>
+                                        <span class="fw-bold text-primary">Habitacion cuadruple superior</span>
+                                        <br>
+                                        <span class="text-muted fw-light"> 1 cama doble + 2 cama individual</span>
+                                    </td>
+                                    <td style="border-left: 1px solid #00a196; border-right: 1px solid #00a196;">
+                                        <i class="bi bi-people-fill"></i>
+                                        +
+                                        <i class="bi bi-person-fill"></i>
+                                        +
+                                        <i class="bi bi-person-fill"></i>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="btn text-black btn-outline-info"
+                                            data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                            data-bs-title="Para ver las habitaciones disponibles y los precios, introduce las fechas de entrada y salida.">
+                                            Mostrar Precios
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <i class="bi text-danger bi-caret-right-fill"></i>
+                                        <span class="fw-bold text-primary">Habitacion quintuple superior</span>
+                                        <br>
+                                        <span class="text-muted fw-light"> 2 cama doble + 1 cama individual</span>
+                                    </td>
+                                    <td style="border-left: 1px solid #00a196; border-right: 1px solid #00a196;">
+                                        <i class="bi bi-people-fill"></i>
+                                        +
+                                        <i class="bi bi-people-fill"></i>
+                                        +
+                                        <i class="bi bi-person-fill"></i>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="btn text-black btn-outline-info"
+                                            data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                            data-bs-title="Para ver las habitaciones disponibles y los precios, introduce las fechas de entrada y salida.">
+                                            Mostrar Precios
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- SERVICIOS -->
+                <div class="col-12 d-flex flex-column align-items-center mt-4 ms-3" id="servicios">
+                    <div class="d-flex col-10" id="info-y-precios">
+                        <h4 class="fw-bold m-0">Servicios</h4>
+                    </div>
+                    <div class="d-flex col-10" id="disponibilidad">
+                        <p class="text-secondary m-0">¡Buenos servicios! Puntuación: 8</p>
+                    </div>
+                    <div class="d-flex col-10" id="disponibilidad">
+                        <p class="text-dark fw-bold m-0 mt-4">Servios mas populares:</p>
+                    </div>
+                </div>
+                <!-- SERVICIOS MAS POPULARES -->
+                <div class="col-12 d-flex flex-column align-items-center mt-3 ms-3">
+                    <div class="col-10 d-flex justify-content-around text-success">
+                        <div>
+                            <i class="bi bi-taxi-front-fill"> Traslado aeropuerto</i>
+                        </div>
+                        <div>
+                            <i class="bi bi-person-wheelchair"> Adaptado personas de movilidad reducida</i>
+                        </div>
+                        <div>
+                            <i class="bi bi-person-raised-hand"> Servicio de habitaciones</i>
+                        </div>
+                        <div>
+                            <i class="bi bi-wifi"> WiFi gratis</i>
+                        </div>
+                    </div>
+                    <div class="col-10 d-flex justify-content-around text-success mt-2">
+                        <div>
+                            <i class="bi bi-fire">Habitaciones sin humo</i>
+                        </div>
+                        <div>
+                            <i class="bi bi-people-fill">Habitaciones familiares</i>
+                        </div>
+                        <div>
+                            <i class="bi bi-cup-hot">Desayuno</i>
+                        </div>
+                        <div>
+                            <i class="bi bi-tv">Zona de estar</i>
+                        </div>
+                    </div>
+                </div>
+                <!-- NORMAS -->
+                <div class="col-12 d-flex flex-column align-items-center mt-5 ms-3" id="normas">
+                    <div class="d-flex col-10" id="info-y-precios">
+                        <h4 class="fw-bold m-0">Normas de la Casa</h4>
+                    </div>
+                    <div class="d-flex col-10" id="disponibilidad">
+                        <p class="text-secondary m-0">Información importante sobre el alojamiento</p>
+                    </div>
+                </div>
+                <!-- NORMAS DE LA CASA -->
+                <div class="col-12 d-flex flex-column align-items-center mt-3 ms-3">
+                    <div class="col-10 d-flex justify-content-around">
+                        <div>
+                            <i class="bi bi-people-fill">Habitaciones sin humo</i>
+                        </div>
+                        <div>
+                            <i class="bi bi-people-fill">Habitaciones familiares</i>
+                        </div>
+                        <div>
+                            <i class="bi bi-cup-hot">Desayuno</i>
+                        </div>
+                        <div>
+                            <i class="bi bi-tv">Zona de estar</i>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+
+            <!-- Modal Moneda a Pagar -->
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title text-success-emphasis fw-bolder fs-5" id="staticBackdropLabel">
+                                Selecciona
+                                tu Moneda a pagar
+                            </h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body p-1">
+                            <div class="d-flex flex-column col-12">
+                                <p class="card-text m-1 ps-2 text-success fw-bold" style="font-size: 13px;">
+                                    Cuando corresponda, los precios se convertirán y se mostrarán
+                                    en la moneda que selecciones. La moneda en la que pagas puede variar en función de
+                                    la
+                                    reserva y es
+                                    posible que se aplique un cargo de servicio.
+                                </p>
+                                <hr class="m-2">
+                                <h6 class="ps-4 text-success fw-bold">Recomendado para ti</h6>
+                                <div class="mx-4">
+                                    <div class="btn my-2 btn-outline-success d-flex justify-content-between"
+                                        data-bs-dismiss="modal">
+                                        <p class="m-0">Dolar Estadounidense</p>
+                                        <span class="fw-bold font-monospace">USD</span>
+                                    </div>
+                                    <div class="btn my-2 btn-outline-success d-flex justify-content-between"
+                                        data-bs-dismiss="modal">
+                                        <p class="m-0">Euro</p>
+                                        <span class="fw-bold font-monospace">EUR</span>
+                                    </div>
+                                    <div class="btn my-2 btn-outline-success d-flex justify-content-between"
+                                        data-bs-dismiss="modal">
+                                        <p class="m-0">Peso Argentino</p>
+                                        <span class="fw-bold font-monospace">ARS</span>
+                                    </div>
+                                    <div class="btn my-2 btn-outline-success d-flex justify-content-between"
+                                        data-bs-dismiss="modal">
+                                        <p class="m-0">Peso Colombiano</p>
+                                        <span class="fw-bold font-monospace">COP</span>
+                                    </div>
+                                    <div class="btn my-2 btn-outline-success d-flex justify-content-between"
+                                        data-bs-dismiss="modal">
+                                        <p class="m-0">Peso Chileno</p>
+                                        <span class="fw-bold font-monospace">CLP</span>
+                                    </div>
+                                    <div class="btn my-2 btn-outline-success d-flex justify-content-between"
+                                        data-bs-dismiss="modal">
+                                        <p class="m-0">Real Brasileño</p>
+                                        <span class="fw-bold font-monospace">BRL</span>
+                                    </div>
+                                    <div class="btn my-2 btn-outline-success d-flex justify-content-between"
+                                        data-bs-dismiss="modal">
+                                        <p class="m-0">Peso Mexicano</p>
+                                        <span class="fw-bold font-monospace">MXN</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal Idioma -->
+            <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false"
+                tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title text-primary-emphasis fw-bolder fs-5" id="staticBackdropLabel">
+                                Selecciona
+                                tu Idioma</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body p-1">
+                            <div class="d-flex flex-column col-12">
+                                <h6 class="ps-4 text-primary fw-bold">Recomendado para ti</h6>
+                                <div class="mx-4">
+                                    <div class="btn my-2 btn-outline-primary d-flex justify-content-between"
+                                        data-bs-dismiss="modal">
+                                        <p class="m-0">Español</p>
+                                        <img src="/assets/logo-españa.png" class="icon-link rounded-circle"
+                                            alt="bandera de españa">
+                                    </div>
+                                    <div class="btn my-2 btn-outline-primary d-flex justify-content-between"
+                                        data-bs-dismiss="modal">
+                                        <p class="m-0">English (US)</p>
+                                        <img src="/assets/logo-eeuu.png" class="icon-link rounded-circle"
+                                            alt="bandera de españa">
+                                    </div>
+                                    <div class="btn my-2 btn-outline-primary d-flex justify-content-between"
+                                        data-bs-dismiss="modal">
+                                        <p class="m-0">Portugês (BR)</p>
+                                        <img src="/assets/logo-bra.png" class="icon-link rounded-circle"
+                                            alt="bandera de españa">
+                                    </div>
+                                    <div class="btn my-2 btn-outline-primary d-flex justify-content-between"
+                                        data-bs-dismiss="modal">
+                                        <p class="m-0">Françes</p>
+                                        <img src="/assets/logo-fran.png" class="icon-link rounded-circle"
+                                            alt="bandera de españa">
+                                    </div>
+                                    <div class="btn my-2 btn-outline-primary d-flex justify-content-between"
+                                        data-bs-dismiss="modal">
+                                        <p class="m-0">Italiano</p>
+                                        <img src="/assets/logo-italia.png" class="icon-link rounded-circle"
+                                            alt="bandera de españa">
+                                    </div>
+                                    <div class="btn my-2 btn-outline-primary d-flex justify-content-between"
+                                        data-bs-dismiss="modal">
+                                        <p class="m-0">Deutsch</p>
+                                        <img src="/assets/logo-alemania.png" class="icon-link rounded-circle"
+                                            alt="bandera de españa">
+                                    </div>
+                                    <div class="btn my-2 btn-outline-primary d-flex justify-content-between"
+                                        data-bs-dismiss="modal">
+                                        <p class="m-0">中文</p>
+                                        <img src="/assets/logo-china.png" class="icon-link rounded-circle"
+                                            alt="bandera de españa">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal Comentarios -->
+            <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false"
+                tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title text-primary-emphasis fw-bolder fs-5" id="staticBackdropLabel">
+                                Comentarios de clientes sobre Hostal Tierra de Vinos
+                            </h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body p-1">
+                            <div class="d-flex col-12 mt-2">
+                                <div class="col-3 d-flex align-items-center">
+                                    <span class="badge ms-3 text-bg-primary">8,2</span>
+                                    <p class="puntuacion ms-2 m-0">Muy Bien</p>
+                                </div>
+                                <div class="col-6 d-flex align-items-center justify-content-center">
+                                    <a href="#" class="m-0 text-success">
+                                        Nuestro objetivo: comentarios 100% reales
+                                        <i class="bi bi-person-heart"></i>
+                                    </a>
+                                </div>
+                                <div class="col-3 d-flex justify-content-end">
+                                    <a href="#" class="btn btn-outline-primary me-2">
+                                        Escribir un comentario
+                                    </a>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="d-flex flex-column col-12">
+                                <div class="col-12 d-flex">
+                                    <h6 class="fw-bold ms-3">Categorias:</h6>
+                                </div>
+                                <div class="col-12 d-flex justify-content-around">
+                                    <div class="col-3 my-2">
+                                        <div class="d-flex justify-content-between">
+                                            <p class="m-0 fw-medium" style="font-size: 14px;">Personal</p>
+                                            <p class="m-0 fw-medium" style="font-size: 14px;">9,2</p>
+                                        </div>
+                                        <div class="progress" role="progressbar" aria-label="Basic example"
+                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"
+                                            style="height: 8px;">
+                                            <div class="progress-bar progress-bar-striped bg-primary"
+                                                style="width: 92%">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 my-2">
+                                        <div class="d-flex justify-content-between">
+                                            <p class="m-0 fw-medium" style="font-size: 14px;">Instalaciones y Servicios
+                                            </p>
+                                            <p class="m-0 fw-medium" style="font-size: 14px;">8,0</p>
+                                        </div>
+                                        <div class="progress" role="progressbar" aria-label="Basic example"
+                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"
+                                            style="height: 8px;">
+                                            <div class="progress-bar progress-bar-striped bg-primary"
+                                                style="width: 80%">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 my-2">
+                                        <div class="d-flex justify-content-between">
+                                            <p class="m-0 fw-medium" style="font-size: 14px;">Limpieza</p>
+                                            <p class="m-0 fw-medium" style="font-size: 14px;">8,6</p>
+                                        </div>
+                                        <div class="progress" role="progressbar" aria-label="Basic example"
+                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"
+                                            style="height: 8px;">
+                                            <div class="progress-bar progress-bar-striped bg-primary"
+                                                style="width: 86%">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 d-flex justify-content-around">
+                                    <div class="col-3 my-2">
+                                        <div class="d-flex justify-content-between">
+                                            <p class="m-0 fw-medium" style="font-size: 14px;">Confort</p>
+                                            <p class="m-0 fw-medium" style="font-size: 14px;">8,3</p>
+                                        </div>
+                                        <div class="progress" role="progressbar" aria-label="Basic example"
+                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"
+                                            style="height: 8px;">
+                                            <div class="progress-bar progress-bar-striped bg-primary"
+                                                style="width: 83%">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 my-2">
+                                        <div class="d-flex justify-content-between">
+                                            <p class="m-0 fw-medium" style="font-size: 14px;">Relación Calidad-Precio
+                                            </p>
+                                            <p class="m-0 fw-medium" style="font-size: 14px;">8,5</p>
+                                        </div>
+                                        <div class="progress" role="progressbar" aria-label="Basic example"
+                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"
+                                            style="height: 8px;">
+                                            <div class="progress-bar progress-bar-striped bg-primary"
+                                                style="width: 85%">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 my-2">
+                                        <div class="d-flex justify-content-between">
+                                            <p class="m-0 fw-medium" style="font-size: 14px;">Ubicación</p>
+                                            <p class="m-0 fw-medium" style="font-size: 14px;">9,3</p>
+                                        </div>
+                                        <div class="progress" role="progressbar" aria-label="Basic example"
+                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"
+                                            style="height: 8px;">
+                                            <div class="progress-bar progress-bar-striped bg-primary"
+                                                style="width: 93%">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 d-flex ps-4">
+                                    <div class="col-3 my-2 ps-2">
+                                        <div class="d-flex justify-content-between">
+                                            <p class="m-0 fw-medium" style="font-size: 14px;">WiFi Gratis</p>
+                                            <p class="m-0 fw-medium" style="font-size: 14px;">7,3</p>
+                                        </div>
+                                        <div class="progress" role="progressbar" aria-label="Basic example"
+                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"
+                                            style="height: 8px;">
+                                            <div class="progress-bar progress-bar-striped bg-danger" style="width: 73%">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="col-12">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center align-items-center gap-5 mb-2 mt-3">
+                    <a href="https://www.instagram.com/lautaro_leall/" class="icon-redes text-white" target="_blank"
+                        style="font-size: 20px;">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                    <a href="https://github.com/LautaroLeall" class="icon-redes text-white" target="_blank"
+                        style="font-size: 20px;">
+                        <i class="bi bi-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/lauldp/" class="icon-redes text-white" target="_blank"
+                        style="font-size: 20px;">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                </div>
+                <hr class="mt-1" style="color: hsl(244, 89%, 11%);">
+                <div class="col-12 d-flex justify-content-between text-white">
+                    <small>© 2025 Booking.com</small>
+                    <p>
+                        Desarrollado por
+                        <a class="text-footer"
+                            href="https://api.whatsapp.com/send/?phone=543813399463&text&type=phone_number&app_absent=0"
+                            target="_blank">
+                            Lautaro Leal
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+<!-- BOOTSTRAP -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+<!-- JS TOOLTIPS BOOTSTRAP  -->
+<script>
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+</script>
+
+</html>
