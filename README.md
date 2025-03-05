@@ -1,25 +1,12 @@
-<h1>
-<img src="https://cf.bstatic.com/static/img/bcom_logo_blue_bg/f12f834e849b2a7f752a14b2598a6ddfeda1e713.svg" 
-style="width: 1100px; height: 80px;" 
-alt="Booking.com">
-</h1>
+# **Booking.com**
+------------
+- **Recreando la interfaz de Booking.com**
+- *Desarrollado con HTML - CSS - BOOTSTRAP sin funcionalidad*  
 
-<h3> Recreando la interfaz de Booking.com </h3>
-<h6> Desarrollado con HTML - CSS - BOOTSTRAP 
-<small>sin funcionalidad</small>
-</h6>
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRV81DEKEnQXC8H-XSMG_4qMKIRz8Esax_CFA&s" 
-style="width: 150px; height: 100px;"
-alt="HTML - CSS - BOOTSTRAP">
-
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/3a3d4d41-2283-4c95-9a5e-01f0410613b9/deploy-status)](https://app.netlify.com/sites/booking-lldp/deploys)
-<br>
-<a href="https://booking-lldp.netlify.app/" class="text-decoration-none" target="_blank"> Booking.com </a>
-<h6>sin responsive por el momento</h6>
-
-<hr>
-<h4 align="end"> Desarrollado por: Lautaro Leal </h>
-
-
+     ![HTML - CSS - BOOTSTRAP](https://camo.githubusercontent.com/0961994f19342d997d301a1d66a026cad9a44e1c4f76a2b02b1b9b1c022ab30f/68747470733a2f2f656e637279707465642d74626e302e677374617469632e636f6d2f696d616765733f713d74626e3a414e643947635256383144454b456e51584338482d58534d475f34714d4b49527a38457361785f4346412673 "HTML - CSS - BOOTSTRAP")
+> [Booking.com](https://booking-lldp.netlify.app/ "Booking.com")
+> <br>
+>   Netifly
+------------
+###### ` Desarrollada por Lautaro Leal `
 
