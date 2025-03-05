@@ -1,5 +1,5 @@
 # **Booking.com**
-------------
+
 - **Recreando la interfaz de Booking.com**
 - *Desarrollado con HTML - CSS - BOOTSTRAP sin funcionalidad*  
 
