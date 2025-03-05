@@ -13,7 +13,7 @@ style="width: 150px; height: 100px;"
 alt="HTML - CSS - BOOTSTRAP">
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/3a3d4d41-2283-4c95-9a5e-01f0410613b9/deploy-status)](https://app.netlify.com/sites/booking-lldp/deploys)
-<a href="https://booking-lldp.netlify.app/"> Booking.com </a>
+<a href="https://booking-lldp.netlify.app/" target="_black"> Booking.com </a>
 
 <h2 align="end"> Desarrollado por: Lautaro Leal </h2>
 
