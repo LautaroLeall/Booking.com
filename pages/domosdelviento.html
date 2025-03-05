@@ -138,6 +138,508 @@
     </header>
 
     <main>
+        <div class="container-fluid mb-3">
+            <div class="row">
+                <!-- MENU DE ARRIBA -->
+                <div class="col-12 mt-5 d-flex justify-content-evenly">
+                    <div>
+                        <a href="#vista-general" class="text-decoration-none border-3 border-bottom border-primary">
+                            Vista General
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#info-y-precios" class="text-decoration-none text-secondary">
+                            Info y Precios
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#servicios" class="text-decoration-none text-secondary">
+                            Servicios
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#normas" class="text-decoration-none text-secondary">
+                            Normas de la Casa
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#" class="text-decoration-none text-secondary" data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop2" data-bs-placement="bottom">
+                            Comentarios de los Clientes
+                        </a>
+                    </div>
+                </div>
+                <!-- VISTA GENERAL -->
+                <div class="col-12 d-flex mt-4 align-items-center">
+                    <div class="d-flex justify-content-center col-11 ms-3" id="vista-general">
+                        <h4 class="fw-bold">Domos del Viento</h4>
+                        <div class="d-flex justify-content-end align-items-center gap-5 col-8">
+                            <a href="#" class="text-decoration-none" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                data-bs-title="Guardar">
+                                <i class="bi bi-star-fill" style="font-size: 20px;"></i>
+                            </a>
+                            <a href="#" class="text-decoration-none" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                data-bs-title="Compartir este Alojamiento">
+                                <i class="bi bi-share" style="font-size: 20px"></i>
+                            </a>
+                            <a href="https://api.whatsapp.com/send/?phone=543813399463&text&type=phone_number&app_absent=0"
+                                target="_blank" class="btn btn-outline-primary rounded-pill text-decoration-none">
+                                Reservar Ahora
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- IMG -->
+                <div class="col-12 d-flex mt-3">
+                    <div class="col-6 d-flex justify-content-end">
+                        <img src="/assets/domos-del-viento/1.jpg" alt="Tierra de Vinos"
+                            class="img-hotel-principal rounded-2">
+                    </div>
+                    <div class="col-3 d-flex align-items-center flex-column">
+                        <img src="/assets/domos-del-viento/2.jpg" class="img-hotel my-1 rounded-2" alt="">
+                        <img src="/assets/domos-del-viento/3.jpg" class="img-hotel my-1 rounded-2" alt="">
+                    </div>
+                    <div class="d-flex flex-column">
+                        <div class="d-flex justify-content-end mt-2 me-2">
+                            <p class="puntuacion m-0">Excepcional
+                                <span class="ms-1 badge text-bg-primary">10</span>
+                                <a href="#" class="puntuacion1 text-primary d-flex justify-content-end"
+                                    data-bs-toggle="modal" data-bs-target="#staticBackdrop2" data-bs-placement="bottom">
+                                    8 reseñas
+                                </a>
+                            </p>
+                        </div>
+                        <iframe class="ms-1 mt-3 border-0 rounded-2"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2145.5365207633317!2d-65.85155720209416!3d-26.029185237555293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9418cdc756382209%3A0xb5d541b333b5101b!2sDomos%20del%20Viento%20Glamping!5e1!3m2!1ses!2sar!4v1741187465380!5m2!1ses!2sar"
+                            width="280" height="150" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                        <div class="d-flex justify-content-end mt-2">
+                            <a class="fw-medium puntuacion1" target="_blank"
+                                href="https://maps.app.goo.gl/2r5syqT72jsRRiwW7">
+                                Mostrar en el Mapa
+                                <i class="bi bi-geo text-primary"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- DESCRIPCION -->
+                <div class="col-12 d-flex flex-column align-items-center mt-1 ms-3">
+                    <div class="col-10">
+                        <div>
+                            <p class="m-1">
+                                Domos del Viento se encuentra en Cafayate y ofrece alojamiento con jardín, wifi gratis,
+                                servicio de habitaciones y recepción 24 horas. Este alojamiento ofrece parking privado
+                                gratis y acceso a una terraza.
+                            </p>
+                        </div>
+                        <div>
+                            <p class="m-1">
+                                Hay toallas y ropa de cama en el tented camp.
+                            </p>
+                        </div>
+                        <div>
+                            <p class="m-1">
+                                El tented camp ofrece desayuno continental o americano.
+                            </p>
+                        </div>
+                        <div>
+                            <p class="m-1">
+                                Hay servicio de alquiler de bicicletas y servicio de alquiler de coches en Domos del
+                                Viento, y en los alrededores se puede practicar ciclismo
+                            </p>
+                        </div>
+                        <div>
+                            <p class="m-1">
+                                El aeropuerto (Aeropuerto de El Aybal) está a 164 km, y el alojamiento ofrece servicio
+                                de traslado de pago para ir o volver del aeropuerto.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- INFO Y PRECIOS -->
+                <div class="col-12 d-flex justify-content-center mt-4 ms-3">
+                    <div class="d-flex col-10" id="info-y-precios">
+                        <h4 class="fw-bold m-0">Disponibilidad</h4>
+                    </div>
+                </div>
+                <!-- DISPONIBILIDAD -->
+                <div class="col-12 d-flex justify-content-center ms-3">
+                    <div class="d-flex col-10" id="disponibilidad">
+                        <p class="text-danger m-0">Indica las fechas para ver la disponibilidad y los precios del
+                            alojamiento</p>
+                    </div>
+                </div>
+                <!-- FILTROS FECHA/PERSONAS -->
+                <div class="col-12 d-flex justify-content-center ms-3 mt-3">
+                    <div class="col-8 d-flex justify-content-evenly">
+                        <div class="col-2">
+                            <input type="date" class="form-control border-primary" id="fecha" placeholder="Fecha"
+                                aria-label="Fecha" aria-describedby="basic-addon1">
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <i class="bi bi-dash-lg text-primary"></i>
+                        </div>
+                        <div class="col-2">
+                            <input type="date" class="form-control border-primary" id="fecha" placeholder="Fecha"
+                                aria-label="Fecha" aria-describedby="basic-addon1">
+                        </div>
+                        <div class="col-3">
+                            <div class="input-group">
+                                <i class="bi bi-person input-group-text border-primary"></i>
+                                <select class="form-select border-primary" aria-label="Default select example">
+                                    <option selected>1 Adulto</option>
+                                    <option value="1">2 Adultos</option>
+                                    <option value="2">1 Niño - 2 Adultos</option>
+                                    <option value="2">2 Niños - 2 Adultos</option>
+                                    <option value="3">3 Adultos</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-outline-primary" id="boton">
+                            Buscar
+                        </button>
+                    </div>
+                </div>
+                <!-- TABLA -->
+                <div class="col-12 d-flex justify-content-center ms-3 mt-4">
+                    <div class="col-9">
+                        <table class="table table-light table-hover bordery">
+                            <thead class="table-primary">
+                                <tr>
+                                    <th scope="col">Tipo de Habitacion</th>
+                                    <th scope="col"
+                                        style="border-left: 1px solid #00a196; border-right: 1px solid #00a196;">Numero
+                                        de Personas</th>
+                                    <th scope="col"></th>
+                                </tr>
+                            </thead>
+                            <tbody class="table-group-divider" id="cuerpo-tabla">
+                                <tr>
+                                    <td>
+                                        <i class="bi text-danger bi-caret-right-fill"></i>
+                                        <span class="fw-bold text-primary">Tienda individual</span>
+                                        <br>
+                                        <span class="text-muted fw-light">1 cama individual</span>
+                                    </td>
+                                    <td style="border-left: 1px solid #00a196; border-right: 1px solid #00a196;">
+                                        <i class="bi bi-person-fill"></i>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="btn text-black btn-outline-info"
+                                            data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                            data-bs-title="Para ver las habitaciones disponibles y los precios, introduce las fechas de entrada y salida.">
+                                            Mostrar Precios
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <i class="bi text-danger bi-caret-right-fill"></i>
+                                        <span class="fw-bold text-primary">Tienda doble superior</span>
+                                        <br>
+                                        <span class="text-muted fw-light">1 cama doble extragrande</span>
+                                    </td>
+                                    <td style="border-left: 1px solid #00a196; border-right: 1px solid #00a196;">
+                                        <i class="bi bi-people-fill"></i>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="btn text-black btn-outline-info"
+                                            data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                            data-bs-title="Para ver las habitaciones disponibles y los precios, introduce las fechas de entrada y salida.">
+                                            Mostrar Precios
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <i class="bi text-danger bi-caret-right-fill"></i>
+                                        <span class="fw-bold text-primary">Tienda doble estándar</span>
+                                        <br>
+                                        <span class="text-muted fw-light">2 cama individual</span>
+                                    </td>
+                                    <td style="border-left: 1px solid #00a196; border-right: 1px solid #00a196;">
+                                        <i class="bi bi-person-fill"></i>
+                                        +
+                                        <i class="bi bi-person-fill"></i>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="btn text-black btn-outline-info"
+                                            data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                            data-bs-title="Para ver las habitaciones disponibles y los precios, introduce las fechas de entrada y salida.">
+                                            Mostrar Precios
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <i class="bi text-danger bi-caret-right-fill"></i>
+                                        <span class="fw-bold text-primary">Tienda triple estándar</span>
+                                        <br>
+                                        <span class="text-muted fw-light"> 1 cama doble + 1 cama individual</span>
+                                    </td>
+                                    <td style="border-left: 1px solid #00a196; border-right: 1px solid #00a196;">
+                                        <i class="bi bi-people-fill"></i>
+                                        +
+                                        <i class="bi bi-person-fill"></i>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="btn text-black btn-outline-info"
+                                            data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                            data-bs-title="Para ver las habitaciones disponibles y los precios, introduce las fechas de entrada y salida.">
+                                            Mostrar Precios
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <i class="bi text-danger bi-caret-right-fill"></i>
+                                        <span class="fw-bold text-primary">Tienda triple estándar</span>
+                                        <br>
+                                        <span class="text-muted fw-light">3 cama individual</span>
+                                    </td>
+                                    <td style="border-left: 1px solid #00a196; border-right: 1px solid #00a196;">
+                                        <i class="bi bi-person-fill"></i>
+                                        +
+                                        <i class="bi bi-person-fill"></i>
+                                        +
+                                        <i class="bi bi-person-fill"></i>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="btn text-black btn-outline-info"
+                                            data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                            data-bs-title="Para ver las habitaciones disponibles y los precios, introduce las fechas de entrada y salida.">
+                                            Mostrar Precios
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- SERVICIOS -->
+                <div class="col-12 d-flex flex-column align-items-center mt-4 ms-3" id="servicios">
+                    <div class="d-flex col-10" id="info-y-precios">
+                        <h4 class="fw-bold m-0">Servicios</h4>
+                    </div>
+                    <div class="d-flex col-10" id="disponibilidad">
+                        <p class="text-secondary m-0">¡Buenos servicios! Puntuación: 10</p>
+                    </div>
+                    <div class="d-flex col-10" id="disponibilidad">
+                        <p class="text-dark fw-bold m-0 mt-4">Servios mas populares:</p>
+                    </div>
+                </div>
+                <!-- SERVICIOS MAS POPULARES -->
+                <div class="col-12 d-flex flex-column align-items-center mt-3 ms-3">
+                    <div class="col-10 d-flex justify-content-around text-success">
+                        <div>
+                            <i class="bi bi-taxi-front-fill"> Traslado aeropuerto</i>
+                        </div>
+                        <div>
+                            <i class="bi bi-p-circle"> Parking gratis</i>
+                        </div>
+                        <div>
+                            <i class="bi bi-person-raised-hand"> Servicio de habitaciones</i>
+                        </div>
+                        <div>
+                            <i class="bi bi-wifi"> WiFi gratis (8 Mbps)</i>
+                        </div>
+                    </div>
+                    <div class="col-10 d-flex justify-content-around text-success mt-2">
+                        <div>
+                            <i class="bi bi-fire"> Habitaciones sin humo</i>
+                        </div>
+                        <div>
+                            <i class="bi bi-people-fill"> Habitaciones familiares</i>
+                        </div>
+                        <div>
+                            <i class="bi bi-cup-hot"> Desayuno</i>
+                        </div>
+                        <div>
+                            <i class="bi bi-bicycle"> Actividades</i>
+                        </div>
+                    </div>
+                </div>
+                <!-- NORMAS -->
+                <div class="col-12 d-flex flex-column align-items-center mt-5 ms-3" id="normas">
+                    <div class="d-flex col-10" id="info-y-precios">
+                        <h4 class="fw-bold m-0">Normas de la Casa</h4>
+                    </div>
+                    <div class="d-flex col-10" id="disponibilidad">
+                        <p class="text-secondary m-0">Información importante sobre el alojamiento</p>
+                    </div>
+                </div>
+                <!-- NORMAS DE LA CASA -->
+                <div class="col-12 d-flex justify-content-center mt-3 ms-3">
+                    <div class="col-10 d-flex flex-column">
+                        <!-- ENTRADA -->
+                        <div class="d-flex justify-content-start">
+                            <div class="col-5 d-flex">
+                                <i class="bi bi-box-arrow-right h5">
+                                    Entrada
+                                </i>
+                            </div>
+                            <div class="d-flex ">
+                                <p class="m-0 font-monospace">
+                                    De las 15:00 a las 18:00
+                                </p>
+                            </div>
+                        </div>
+                        <hr>
+                        <!-- SALIDA -->
+                        <div class="d-flex justify-content-start">
+                            <div class="col-5 d-flex">
+                                <i class="bi bi-box-arrow-left h5">
+                                    Salida
+                                </i>
+                            </div>
+                            <div class="d-flex ">
+                                <p class="m-0 font-monospace">
+                                    De las 10:00 a las 11:30
+                                </p>
+                            </div>
+                        </div>
+                        <hr>
+                        <!-- CANCELACION PREPAGO -->
+                        <div class="d-flex justify-content-start">
+                            <div class="col-5 d-flex">
+                                <i class="bi bi-exclamation-circle h5">
+                                    Cancelación / Prepago
+                                </i>
+                            </div>
+                            <div class="d-flex ">
+                                <p class="m-0 font-monospace">
+                                    Las condiciones de cancelación y de pago por adelantado pueden variar según el tipo
+                                    de alojamiento.
+                                    <a href="#"> Introduce las fechas de tu estancia </a>
+                                    y consulta las condiciones de la
+                                    opción que quieres reservar.
+                                </p>
+                            </div>
+                        </div>
+                        <hr>
+                        <!-- CAMAS PARA NINOS -->
+                        <div class="d-flex justify-content-start">
+                            <div class="col-5 d-flex">
+                                <i class="bi bi-people-fill h5">
+                                    Camas para Niños
+                                </i>
+                            </div>
+                            <div class="d-flex flex-column">
+                                <p class="m-0 mb-1 h6">
+                                    Condiciones para estancias con niños
+                                </p>
+                                <div class="d-flex">
+                                    <p class="m-0 font-monospace">
+                                        Se pueden alojar niños a partir de 16 años.
+                                    </p>
+                                </div>
+                                <div class="d-flex">
+                                    <p class="m-0 font-monospace">
+                                        Para ver la información correcta sobre precios y ocupación, añade a la búsqueda
+                                        el número de niños con los que viajas y sus edades.
+                                    </p>
+                                </div>
+                                <p class="m-0 mt-3 mb-1 h6">
+                                    Condiciones sobre cunas y camas supletorias
+                                </p>
+                                <div class="d-flex justify-content-center border border-5 mt-1 mb-1 w-75">
+                                    <p class="m-0 font-monospace text-secondary fw-bold">
+                                        En este alojamiento no hay cunas ni camas supletorias.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <!-- RESTRICCIONES DE EDAD -->
+                        <div class="d-flex justify-content-start">
+                            <div class="col-5 d-flex">
+                                <i class="bi bi-person-standing h5">
+                                    No hay restricción por edad
+                                </i>
+                            </div>
+                            <div class="d-flex flex-column">
+                                <p class="m-0 font-monospace">
+                                    Edad mínima para el check-in: 18
+                                </p>
+                            </div>
+                        </div>
+                        <hr>
+                        <!-- MASCOTAS -->
+                        <div class="d-flex justify-content-start">
+                            <div class="col-5 d-flex">
+                                <i class="bi bi-android h5">
+                                    Mascotas
+                                </i>
+                            </div>
+                            <div class="d-flex flex-column">
+                                <p class="m-0 font-monospace">
+                                    No se admiten.
+                                </p>
+                            </div>
+                        </div>
+                        <hr>
+                        <!-- METODOS DE PAGO -->
+                        <div class="d-flex justify-content-start">
+                            <div class="col-5 d-flex">
+                                <i class="bi bi-credit-card-fill h5">
+                                    Metodos de Pago
+                                </i>
+                            </div>
+                            <div class="d-flex gap-4">
+                                <img class="img-pago" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                    data-bs-title="Tarjeta American Express"
+                                    src="/assets/domos-del-viento/american-express.jpg" alt="Tarjeta American Express">
+                                <img class="img-pago" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                    data-bs-title="Tarjeta Visa" src="/assets/tierra-de-vinos/visa.jpg"
+                                    alt="Tarjeta Visa">
+                                <img class="img-pago" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                    data-bs-title="Tarjeta Mastercard" src="/assets/tierra-de-vinos/mastercard.jpg"
+                                    alt="Tarjeta Mastercard">
+                                <img class="img-pago" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                    data-bs-title="Tarjeta Diners Club International"
+                                    src="/assets/domos-del-viento/diners-club-international.jpg"
+                                    alt="Tarjeta Diners Club International">
+                                <img class="img-pago" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                    data-bs-title="Tarjeta Maestro" src="/assets/tierra-de-vinos/maestro.jpg"
+                                    alt="Tarjeta Maestro">
+                                <img class="img-pago" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                    data-bs-title="Efectivo" src="/assets/tierra-de-vinos/efectivo.jpg" alt="Efectivo">
+                            </div>
+                        </div>
+                        <hr>
+                        <!-- FUMADORES -->
+                        <div class="d-flex justify-content-start">
+                            <div class="col-5 d-flex">
+                                <i class="bi bi-fire h5">
+                                    Fumadores
+                                </i>
+                            </div>
+                            <div class="d-flex flex-column">
+                                <p class="m-0 font-monospace">
+                                    No se puede fumar.
+                                </p>
+                            </div>
+                        </div>
+                        <hr>
+                        <!-- FIESTAS -->
+                        <div class="d-flex justify-content-start">
+                            <div class="col-5 d-flex">
+                                <i class="bi bi-balloon h5">
+                                    Fiesta
+                                </i>
+                            </div>
+                            <div class="d-flex flex-column">
+                                <p class="m-0 font-monospace">
+                                    No se pueden celebrar fiestas/eventos
+                                </p>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- Modal Moneda a Pagar -->
         <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
@@ -268,9 +770,562 @@
                 </div>
             </div>
         </div>
+
+        <!-- Modal Comentarios -->
+        <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title text-primary-emphasis fw-bolder fs-5" id="staticBackdropLabel">
+                            Comentarios de clientes sobre Hostal Domos del Viento
+                        </h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body p-1">
+                        <div class="d-flex col-12 mt-2">
+                            <div class="col-3 d-flex align-items-center">
+                                <span class="badge ms-3 text-bg-primary">10</span>
+                                <p class="puntuacion ms-2 m-0">Excepcional</p>
+                            </div>
+                            <div class="col-6 d-flex align-items-center justify-content-center">
+                                <a href="#" class="m-0 text-success">
+                                    Nuestro objetivo: comentarios 100% reales
+                                    <i class="bi bi-person-heart"></i>
+                                </a>
+                            </div>
+                            <div class="col-3 d-flex justify-content-end">
+                                <a href="#" class="btn btn-outline-primary me-2">
+                                    Escribir un comentario
+                                </a>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="d-flex flex-column col-12">
+                            <div class="col-12 d-flex">
+                                <h6 class="fw-bold ms-3">Categorias:</h6>
+                            </div>
+                            <div class="col-12 d-flex justify-content-around">
+                                <div class="col-3 my-2">
+                                    <div class="d-flex justify-content-between">
+                                        <p class="m-0 fw-medium" style="font-size: 14px;">Personal</p>
+                                        <p class="m-0 fw-medium" style="font-size: 14px;">10</p>
+                                    </div>
+                                    <div class="progress" role="progressbar" aria-label="Basic example"
+                                        aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 8px;">
+                                        <div class="progress-bar progress-bar-striped bg-success" style="width: 100%">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 my-2">
+                                    <div class="d-flex justify-content-between">
+                                        <p class="m-0 fw-medium" style="font-size: 14px;">Instalaciones y Servicios
+                                        </p>
+                                        <p class="m-0 fw-medium" style="font-size: 14px;">10</p>
+                                    </div>
+                                    <div class="progress" role="progressbar" aria-label="Basic example"
+                                        aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 8px;">
+                                        <div class="progress-bar progress-bar-striped bg-success" style="width: 100%">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 my-2">
+                                    <div class="d-flex justify-content-between">
+                                        <p class="m-0 fw-medium" style="font-size: 14px;">Limpieza</p>
+                                        <p class="m-0 fw-medium" style="font-size: 14px;">9,4</p>
+                                    </div>
+                                    <div class="progress" role="progressbar" aria-label="Basic example"
+                                        aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 8px;">
+                                        <div class="progress-bar progress-bar-striped bg-primary" style="width: 94%">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 d-flex justify-content-around">
+                                <div class="col-3 my-2">
+                                    <div class="d-flex justify-content-between">
+                                        <p class="m-0 fw-medium" style="font-size: 14px;">Confort</p>
+                                        <p class="m-0 fw-medium" style="font-size: 14px;">10</p>
+                                    </div>
+                                    <div class="progress" role="progressbar" aria-label="Basic example"
+                                        aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 8px;">
+                                        <div class="progress-bar progress-bar-striped bg-success" style="width: 100%">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 my-2">
+                                    <div class="d-flex justify-content-between">
+                                        <p class="m-0 fw-medium" style="font-size: 14px;">Relación Calidad-Precio
+                                        </p>
+                                        <p class="m-0 fw-medium" style="font-size: 14px;">10</p>
+                                    </div>
+                                    <div class="progress" role="progressbar" aria-label="Basic example"
+                                        aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 8px;">
+                                        <div class="progress-bar progress-bar-striped bg-primary" style="width: 100%">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 my-2">
+                                    <div class="d-flex justify-content-between">
+                                        <p class="m-0 fw-medium" style="font-size: 14px;">Ubicación</p>
+                                        <p class="m-0 fw-medium" style="font-size: 14px;">10</p>
+                                    </div>
+                                    <div class="progress" role="progressbar" aria-label="Basic example"
+                                        aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 8px;">
+                                        <div class="progress-bar progress-bar-striped bg-primary" style="width: 100%">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="col-12 d-flex flex-column">
+                            <div class="col-12 d-flex">
+                                <h6 class="fw-bold ms-3">Filtros:</h6>
+                            </div>
+                            <div class="col-12 d-flex justify-content-around">
+                                <div class="col-3 mt-2">
+                                    <p class="m-0 fw-medium">Tipo de Cliente</p>
+                                    <div class="input-group">
+                                        <select class="form-select border-primary" aria-label="Default select example">
+                                            <option selected>Todos (8)</option>
+                                            <option value="1">Familiares (3)</option>
+                                            <option value="2">Parejas (4)</option>
+                                            <option value="3">Personas Solitarias (1)</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-3 mt-2">
+                                    <p class="m-0 fw-medium">Puntuaciones</p>
+                                    <div class="input-group">
+                                        <select class="form-select border-primary" aria-label="Default select example">
+                                            <option selected>Todos (8)</option>
+                                            <option value="1">Fantastico +9 (8)</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-3 mt-2">
+                                    <p class="m-0 fw-medium">Epoca del Año</p>
+                                    <div class="input-group">
+                                        <select class="form-select border-primary" aria-label="Default select example">
+                                            <option selected>Todas</option>
+                                            <option value="1">Ene-Mar</option>
+                                            <option value="2">Abr-Jun</option>
+                                            <option value="2">Jul-Sep</option>
+                                            <option value="3">Oct-Dic</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 d-flex">
+                                <p class="m-0 fw-medium ms-5 mt-2">Elige los temas de los comentarios:</p>
+                            </div>
+                            <div class="col-11 d-flex gap-2 justify-content-end">
+                                <div class="mt-2">
+                                    <a href="#" class="btn btn-outline-primary rounded-5">
+                                        <i class="bi bi-asterisk"></i>
+                                        Desayuno
+                                    </a>
+                                </div>
+                                <div class="mt-2">
+                                    <a href="#" class="btn btn-outline-primary rounded-5">
+                                        <i class="bi bi-asterisk"></i>
+                                        Cama
+                                    </a>
+                                </div>
+                                <div class="mt-2">
+                                    <a href="#" class="btn btn-outline-primary rounded-5">
+                                        <i class="bi bi-asterisk"></i>
+                                        Vistas
+                                    </a>
+                                </div>
+                                <div class="mt-2">
+                                    <a href="#" class="btn btn-outline-primary rounded-5">
+                                        <i class="bi bi-asterisk"></i>
+                                        Mascota
+                                    </a>
+                                </div>
+                                <div class="mt-2">
+                                    <a href="#" class="btn btn-outline-primary rounded-5">
+                                        <i class="bi bi-asterisk"></i>
+                                        Habitacion
+                                    </a>
+                                </div>
+                                <div class="mt-2">
+                                    <a href="#" class="btn btn-outline-primary rounded-circle">
+                                        <i class="bi bi-search"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="col-12 d-flex flex-column">
+                            <div class="col-12 d-flex">
+                                <div class="col-8 d-flex">
+                                    <h6 class="fw-bold ms-3">Comentarios de clientes:</h6>
+                                </div>
+                                <div class="col-3 d-flex flex-column">
+                                    <small>Ordenar comentarios por:</small>
+                                    <div class="input-group">
+                                        <select class="form-select border-secondary h-50"
+                                            aria-label="Default select example">
+                                            <option selected>Mas relevantes</option>
+                                            <option value="1">Mas recientes</option>
+                                            <option value="2">Mas antiguos</option>
+                                            <option value="2">Puntuacion mas alta</option>
+                                            <option value="3">Puntuacion mas baja</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 1er COMENTARIO -->
+                            <div class="col-12 d-flex flex-column">
+                                <div class="col-12 d-flex">
+                                    <div class="col-1 d-flex justify-content-end align-items-start">
+                                        <p class="m-0 fw-bold btn btn-info rounded-circle">
+                                            L
+                                        </p>
+                                    </div>
+                                    <div class="col-1 d-flex align-items-center flex-column">
+                                        <p class="m-0 fw-bold">Lorena</p>
+                                        <div class="d-flex align-items-center me-2">
+                                            <img src="/assets/logo-arg" style="width: 12px; height: 12px;"
+                                                alt="Bandera Argentina">
+                                            <p class="m-0 ms-2 font-monospace" style="font-size: 10px;">
+                                                Arg
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 d-flex align-items-end flex-column pe-3">
+                                        <small class="m-0 text-secondary">
+                                            Fecha del comentario: 19 de enero de 2025
+                                        </small>
+                                        <div class="col-8 d-flex me-3">
+                                            <p class="m-0 fw-bold">
+                                                Excepcional
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 d-flex justify-content-end align-items-center">
+                                        <span class="badge d-flex align-items-center text-bg-primary h-75">10</span>
+                                    </div>
+                                </div>
+                                <div class="col-12 d-flex mt-2">
+                                    <div class="col-3 d-flex align-items-start flex-column ms-4">
+                                        <i class="bi bi-house-heart-fill fw-light mb-1" style="font-size: 12px;">
+                                            Tienda doble superior
+                                        </i>
+                                        <i class="bi bi-calendar fw-light mb-1" style="font-size: 12px;">
+                                            1 Noches
+                                        </i>
+                                        <i class="bi bi-people-fill fw-light" style="font-size: 12px;">
+                                            En Pareja
+                                        </i>
+                                    </div>
+                                    <div class="col-8 d-flex flex-column ms-4">
+                                        <div class="d-flex">
+                                            <i class="bi bi-emoji-smile text-success fw-semibold mb-1"
+                                                style="font-size: 14px;">
+                                                Las instalaciones , la tranquilidad acompañado de un excelente paisaje y
+                                                una tranquilidad única
+                                            </i>
+                                        </div>
+                                        <div class="d-flex flex-column border border-2 border-black p-2 w-75 rounded-3">
+                                            <i class="bi bi-chat-right-fill fw-bold" style="font-size: 14px;">
+                                                Respuesta del alojamiento:
+                                            </i>
+                                            <p class="m-0 text-secondary fw-semibold">
+                                                Muchas gracias! te esperamos pronto!
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <!-- 2do COMENTARIO -->
+                            <div class="col-12 d-flex flex-column">
+                                <div class="col-12 d-flex">
+                                    <div class="col-1 d-flex justify-content-end align-items-start">
+                                        <p class="m-0 fw-bold btn btn-danger rounded-circle">
+                                            G
+                                        </p>
+                                    </div>
+                                    <div class="col-1 d-flex align-items-end flex-column ms-1">
+                                        <p class="m-0 fw-bold">Giuliano</p>
+                                        <div class="d-flex align-items-center me-3">
+                                            <img src="/assets/logo-chile" style="width: 12px; height: 12px;"
+                                                alt="Bandera Chile">
+                                            <p class="m-0 ms-2 font-monospace" style="font-size: 10px;">
+                                                Chile
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 d-flex align-items-end flex-column pe-3">
+                                        <small class="m-0 text-secondary">
+                                            Fecha del comentario: 27 de enero de 2025
+                                        </small>
+                                        <div class="col-8 d-flex me-3">
+                                            <p class="m-0 fw-bold">
+                                                Tranquilidad y armonía
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 d-flex justify-content-end align-items-center">
+                                        <span class="badge d-flex align-items-center text-bg-primary h-75">10</span>
+                                    </div>
+                                </div>
+                                <div class="col-12 d-flex mt-2">
+                                    <div class="col-3 d-flex align-items-start flex-column ms-4">
+                                        <i class="bi bi-house-heart-fill fw-light mb-1" style="font-size: 12px;">
+                                            Tienda doble superior
+                                        </i>
+                                        <i class="bi bi-calendar fw-light mb-1" style="font-size: 12px;">
+                                            3 Noches
+                                        </i>
+                                        <i class="bi bi-people-fill fw-light" style="font-size: 12px;">
+                                            En Pareja
+                                        </i>
+                                    </div>
+                                    <div class="col-8 d-flex flex-column ms-4">
+                                        <div class="d-flex">
+                                            <i class="bi bi-emoji-smile text-success fw-semibold mb-1"
+                                                style="font-size: 14px;">
+                                                La vista un sueño, todo impecable y cómodo y la atención lo mejor de
+                                                todo.
+                                            </i>
+                                        </div>
+                                        <div class="d-flex flex-column border border-2 border-black p-2 w-75 rounded-3">
+                                            <i class="bi bi-chat-right-fill fw-bold" style="font-size: 14px;">
+                                                Respuesta del alojamiento:
+                                            </i>
+                                            <p class="m-0 text-secondary fw-semibold">
+                                                Gracias Giuliano, espero verlos nuevamente, abrazo
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <!-- 3er COMENTARIO -->
+                            <div class="col-12 d-flex flex-column">
+                                <div class="col-12 d-flex">
+                                    <div class="col-1 d-flex justify-content-end align-items-start">
+                                        <p class="m-0 fw-bold btn btn-primary rounded-circle">
+                                            G
+                                        </p>
+                                    </div>
+                                    <div class="col-1 d-flex align-items-center flex-column ms-1">
+                                        <p class="m-0 fw-bold">Gonzalo</p>
+                                        <div class="d-flex align-items-center me-3">
+                                            <img src="/assets/logo-arg" style="width: 12px; height: 12px;"
+                                                alt="Bandera Argentina">
+                                            <p class="m-0 ms-2 font-monospace" style="font-size: 10px;">
+                                                Arg
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 d-flex align-items-end flex-column pe-3">
+                                        <small class="m-0 text-secondary">
+                                            Fecha del comentario: 13 de febrero de 2025
+                                        </small>
+                                        <div class="col-8 d-flex me-3">
+                                            <p class="m-0 fw-bold">
+                                                Hermosa y relajante experiencia.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 d-flex justify-content-end align-items-center">
+                                        <span class="badge d-flex align-items-center text-bg-primary h-75">10</span>
+                                    </div>
+                                </div>
+                                <div class="col-12 d-flex mt-2">
+                                    <div class="col-3 d-flex align-items-start flex-column ms-4">
+                                        <i class="bi bi-house-heart-fill fw-light mb-1" style="font-size: 12px;">
+                                            Tienda doble superior
+                                        </i>
+                                        <i class="bi bi-calendar fw-light mb-1" style="font-size: 12px;">
+                                            1 Noches
+                                        </i>
+                                        <i class="bi bi-people-fill fw-light" style="font-size: 12px;">
+                                            En Pareja
+                                        </i>
+                                    </div>
+                                    <div class="col-8 d-flex flex-column ms-4">
+                                        <div class="d-flex">
+                                            <i class="bi bi-emoji-smile text-success fw-semibold mb-1"
+                                                style="font-size: 14px;">
+                                                La habitación era amplia y muy acogedora y la cama era genial. Dormimos
+                                                muy bien. Disfrutamos de nuestro desayuno, no en la cama, sino en la
+                                                terraza frente a la tienda, bajo el ya cálido sol y mirando las vistas,
+                                                los pájaros y los animales. Fue una experiencia muy agradable.
+                                                <br>
+                                                La persona que nos recibió fue muy amable y nos dio buenos consejos.
+                                                Extra: el perro vecino guardó la tentación a cambio de mimos.
+                                                <br>
+                                                Definitivamente lo recomiendo.
+                                            </i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <!-- 4to COMENTARIO -->
+                            <div class="col-12 d-flex flex-column">
+                                <div class="col-12 d-flex">
+                                    <div class="col-1 d-flex justify-content-end align-items-start">
+                                        <p class="m-0 fw-bold btn btn-warning rounded-circle">
+                                            P
+                                        </p>
+                                    </div>
+                                    <div class="col-1 d-flex align-items-center flex-column">
+                                        <p class="m-0 fw-bold">Pawel</p>
+                                        <div class="d-flex align-items-center">
+                                            <img src="/assets/logo-belgica.png" style="width: 12px; height: 12px;"
+                                                alt="Bandera Belgica">
+                                            <p class="m-0 ms-2 font-monospace" style="font-size: 10px;">
+                                                Belg
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 d-flex align-items-end flex-column pe-1">
+                                        <small class="m-0 text-secondary">
+                                            Fecha del comentario: 25 de febrero de 2025
+                                        </small>
+                                        <div class="col-8 d-flex me-3">
+                                            <p class="m-0 fw-bold">
+                                                Excepcional
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 d-flex justify-content-end align-items-center">
+                                        <span class="badge d-flex align-items-center text-bg-primary h-75">10</span>
+                                    </div>
+                                </div>
+                                <div class="col-12 d-flex mt-2">
+                                    <div class="col-3 d-flex align-items-start flex-column ms-4">
+                                        <i class="bi bi-house-heart-fill fw-light mb-1" style="font-size: 12px;">
+                                            Tienda individual
+                                        </i>
+                                        <i class="bi bi-calendar fw-light mb-1" style="font-size: 12px;">
+                                            2 Noches
+                                        </i>
+                                        <i class="bi bi-people-fill fw-light" style="font-size: 12px;">
+                                            Persona que viaja sola
+                                        </i>
+                                    </div>
+                                    <div class="col-8 d-flex flex-column ms-4">
+                                        <div class="d-flex">
+                                            <i class="bi bi-emoji-smile text-success fw-semibold mb-1"
+                                                style="font-size: 14px;">
+                                                The tents are luxury : spacious, clean, comfortable (big beds) and well
+                                                equipped. The view from the bed is spectacular. The breakfast on the
+                                                terrace is an amazing experience.
+                                            </i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <!-- 5to COMENTARIO -->
+                            <div class="col-12 d-flex flex-column">
+                                <div class="col-12 d-flex">
+                                    <div class="col-1 d-flex justify-content-end align-items-start">
+                                        <p class="m-0 fw-bold btn btn-success rounded-circle">
+                                            A
+                                        </p>
+                                    </div>
+                                    <div class="col-1 d-flex align-items-center flex-column">
+                                        <p class="m-0 fw-bold">Anna</p>
+                                        <div class="d-flex align-items-center">
+                                            <img src="/assets/logo-bra.png" style="width: 12px; height: 12px;"
+                                                alt="Bandera Brasil">
+                                            <p class="m-0 ms-2 font-monospace" style="font-size: 10px;">
+                                                Bra
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 d-flex align-items-end flex-column pe-3">
+                                        <small class="m-0 text-secondary">
+                                            Fecha del comentario: 4 de marzo de 2025
+                                        </small>
+                                        <div class="col-8 d-flex me-2">
+                                            <p class="m-0 fw-bold">
+                                                Experiencia incrível
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 d-flex justify-content-end align-items-center">
+                                        <span class="badge d-flex align-items-center text-bg-primary h-75">10</span>
+                                    </div>
+                                </div>
+                                <div class="col-12 d-flex mt-2">
+                                    <div class="col-3 d-flex align-items-start flex-column ms-4">
+                                        <i class="bi bi-house-heart-fill fw-light mb-1" style="font-size: 12px;">
+                                            Tienda doble superior
+                                        </i>
+                                        <i class="bi bi-calendar fw-light mb-1" style="font-size: 12px;">
+                                            3 Noches
+                                        </i>
+                                        <i class="bi bi-people-fill fw-light" style="font-size: 12px;">
+                                            En Pareja
+                                        </i>
+                                    </div>
+                                    <div class="col-8 d-flex flex-column ms-4">
+                                        <div class="d-flex">
+                                            <i class="bi bi-emoji-smile text-success fw-semibold mb-1"
+                                                style="font-size: 14px;">
+                                                A vista é maravilhosa, tem ar condicionado, banheiro privado ,
+                                                geladeira, Wi-Fi , chuveiro quente ❤️
+                                            </i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="col-12 d-flex justify-content-end pe-5">
+                                <p class="m-0 text-secondary fw-semibold">
+                                    Mostrando 5 - 8
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
-    <footer></footer>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center align-items-center gap-5 mb-2 mt-3">
+                    <a href="https://www.instagram.com/lautaro_leall/" class="icon-redes text-white" target="_blank"
+                        style="font-size: 20px;">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                    <a href="https://github.com/LautaroLeall" class="icon-redes text-white" target="_blank"
+                        style="font-size: 20px;">
+                        <i class="bi bi-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/lauldp/" class="icon-redes text-white" target="_blank"
+                        style="font-size: 20px;">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                </div>
+                <hr class="mt-1" style="color: hsl(244, 89%, 11%);">
+                <div class="col-12 d-flex justify-content-between text-white">
+                    <small>© 2025 Booking.com</small>
+                    <p>
+                        Desarrollado por
+                        <a class="text-footer"
+                            href="https://api.whatsapp.com/send/?phone=543813399463&text&type=phone_number&app_absent=0"
+                            target="_blank">
+                            Lautaro Leal
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 <!-- BOOTSTRAP -->
