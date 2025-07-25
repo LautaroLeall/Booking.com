@@ -22,8 +22,6 @@ Perfecto como ejercicio de **UI/UX**, **diseño web** y **desarrollo web** (aunq
     Incluye puntuaciones, galería de imágenes, ubicación geográfica, descripción del entorno, características del domo y servicios más populares.
 
 - **Página de error personalizada** (`error404.html`)
-- **Footer completo** con links útiles y redes sociales
-
 ---
 
 ## 🛠️ Tecnologías y herramientas
